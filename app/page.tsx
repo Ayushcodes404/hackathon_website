@@ -124,9 +124,9 @@ export default function HomePage() {
       `}</style>
 
       {/* Hero Section */}
-      <section className="min-h-screen bg-gray-50 px-4 flex items-center justify-center relative overflow-hidden" data-animate id="hero">
+      <section className="h-screen bg-gray-100 px-4 pt-28 md:pt-32 flex items-start justify-center relative overflow-hidden" data-animate id="hero">
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h1 className={`text-5xl md:text-6xl font-bold text-gray-900 mb-6 hidden-initial ${visibleSections.has("hero") ? "animate-fade-in-up" : ""}`}>
+          <h1 className={`text-6xl md:text-6xl font-bold text-gray-900 mb-6 hidden-initial ${visibleSections.has("hero") ? "animate-fade-in-up" : ""}`}>
             Where{" "}
             <span className="bg-orange-500 text-white px-4 py-2 rounded-full inline-block transform -rotate-2 hover:rotate-0 transition-transform duration-300">
               Innovation
