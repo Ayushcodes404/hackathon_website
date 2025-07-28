@@ -121,9 +121,16 @@ export default function HackathonWebsite() {
                 Prizes
               </Link>
               <Link href="#sponsors" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
-                Sponsors
+                Team
               </Link>
-              <button className="sketchy-btn bg-[#FF6B35] text-white px-6 py-2 font-semibold">Register Now</button>
+              <Link href="/wait" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+                Problem Statements
+              </Link>
+              <Link href="/wait">
+                <button className="sketchy-btn bg-[#FF6B35] text-white px-6 py-2 font-semibold">
+                  Register Now
+                </button>
+              </Link>
             </nav>
           </div>
         </div>
@@ -133,6 +140,14 @@ export default function HackathonWebsite() {
       <section className="min-h-screen flex items-center px-4 relative overflow-hidden">
         
 
+        {/* Left side illustration */}
+        <div className="absolute top-1/2 left-0 -translate-y-1/2 hidden lg:block">
+          <img src="/hero_left.png" alt="Hero Left Illustration" className="opacity-100 rotate-0" />
+        </div>
+        {/* Right side illustration */}
+        <div className="absolute top-1/2 right-10 -translate-y-1/2 hidden lg:block">
+          <img src="/hero_right.png" alt="Hero Right Illustration" className="opacity-50 -rotate-0" />
+        </div>
         <div className="container mx-auto text-center relative z-10">
           <div className="max-w-4xl mx-auto">
             <Badge className="mb-6 bg-[#FF6B35] text-white px-4 py-2 text-lg">August 19, 2025</Badge>
@@ -142,12 +157,16 @@ export default function HackathonWebsite() {
               Turn your wildest ideas into reality.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <button className="sketchy-btn bg-[#FF6B35] text-white px-8 py-4 text-xl font-semibold">
-                Register for Free
-              </button>
-              <button className="sketchy-btn bg-transparent border-2 border-[#8B4513] text-[#8B4513] px-8 py-4 text-xl font-semibold">
-                View Schedule
-              </button>
+              <Link href="/wait">
+                <button className="sketchy-btn bg-[#FF6B35] text-white px-8 py-4 text-xl font-semibold">
+                    Register Now
+                  </button>
+              </Link>
+              <Link href="#schedule">
+                <button className="sketchy-btn bg-transparent border-2 border-[#8B4513] text-[#8B4513] px-8 py-4 text-xl font-semibold">
+                  View Schedule
+                </button>
+              </Link>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
               <div className="flex items-center justify-center space-x-2">
@@ -217,7 +236,7 @@ export default function HackathonWebsite() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-[#8B4513] text-lg">
-                  Compete for amazing prizes, mentorship opportunities, and the chance to showcase your skills.
+                  Compete for amazing prizes and the chance to showcase your skills.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -377,7 +396,7 @@ export default function HackathonWebsite() {
       </section>
 
       {/* Patron Section */}
-      <section id="sponsors" className="py-20 px-4 bg-[#F5F5DC] relative overflow-hidden">
+      <section id="CHIEF PATRON" className="py-20 px-4 bg-[#F5F5DC] relative overflow-hidden">
         {/* Left side illustration */}
         <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/3 hidden lg:block">
           <img
@@ -407,55 +426,124 @@ export default function HackathonWebsite() {
 
           {/* Patrons*/}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">Patrons</h3>
+            <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">CHIEF PATRONS</h3>
             <div className="flex justify-center gap-x-8">
-              <Card className="border-4 border-[#FF6B35] bg-white p-8 max-w-md">
-                <div className="flex items-center justify-center h-32">
-                  <img
-                    src="/placeholder.svg?height=120&width=300"
-                    alt="Title Sponsor Logo"
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </div>
-              </Card>
-              <Card className="border-4 border-[#FF6B35] bg-white p-8 max-w-md">
-                <div className="flex items-center justify-right h-32">
-                  <img
-                    src="/placeholder.svg?height=120&width=300"
-                    alt="Title Sponsor Logo"
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </div>
-              </Card>
-              <Card className="border-4 border-[#FF6B35] bg-white p-8 max-w-md">
-                <div className="flex items-center justify-left h-32">
-                  <img
-                    src="/placeholder.svg?height=120&width=300"
-                    alt="Title Sponsor Logo"
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </div>
-              </Card>
+            {/* Card 1 */}
+            <div className="flex flex-col items-center gap-y-4">
+              <div className="w-48 h-48">
+                <img
+                  src="/siddarama_swamiji.jpg"
+                  alt="Title Sponsor Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h4 className="text-2xl text-[#FF6B35] text-center mb-0">
+                Dr. Tontada Siddharama Mahaswamiji 
+              </h4>
+              <h1 className="text-base text-blue-600 text-center -mt-0">
+                Yedeyuru Shri Jagadguru Tontadarya Samsthana Math, 
+              </h1>
+              <h1 className="text-base text-blue-600 text-center -mt-0">
+                 Dambal-Gadag 
+              </h1>
+            </div>
+
+            {/* Card 2 */}
+            <div className="flex flex-col items-center gap-y-4">
+              <div className="w-48 h-48">
+                <img
+                  src="/alamprabhu_maha_swamiji.jpg"
+                  alt="Title Sponsor Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h4 className="text-2xl text-[#FF6B35] text-center mb-0">
+               Dr. Allamaprabhu Mahaswamiji 
+              </h4>
+              <h1 className="text-base text-blue-600 text-center -mt-0">
+                Naganuru Shri Rudrakshimath, Belagavi. 
+              </h1>
+
             </div>
           </div>
 
-          {/* Principal */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">Principal</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {[1, 2].map((sponsor) => (
-                <Card key={sponsor} className="border-3 border-[#8B4513] bg-white p-6">
-                  <div className="flex items-center justify-center h-24">
-                    <img
-                      src={`/placeholder.svg?height=80&width=200&query=technology startup logo ${sponsor}`}
-                      alt={`Gold Sponsor ${sponsor} Logo`}
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
-                </Card>
-              ))}
-            </div>
           </div>
+
+          {/* PATRONS */}
+          <div className="mb-16">
+          <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">PATRONS</h3>
+
+          <div className="flex justify-center gap-x-12">
+            {/* Patron 1 */}
+            <div className="flex flex-col items-center gap-y-8">
+              <div className="w-48 h-48">
+                <img
+                  src="/Mahadeva_Prasanna.jpeg"
+                  alt="Title Sponsor Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h4 className="text-2xl text-[#FF6B35] text-center mb-0">
+                Prof. S. R. Mahadeva Prasanna  
+              </h4>
+              <h1 className="text-base text-blue-600 text-center -mt-0">
+                Director, IIIT Dharwad. 
+              </h1>
+            </div>
+
+            {/* Patron 2 */}
+            <div className="flex flex-col items-center gap-y-8">
+              <div className="w-48 h-48">
+                <img
+                  src="/Rahul-Sharanappa-Sankanur.jpg"
+                  alt="Title Sponsor Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h4 className="text-2xl text-[#FF6B35] text-center mb-0">
+                Shri Rahul Sharanappa Sankanur  
+              </h4>
+              <h1 className="text-base text-blue-600 text-center -mt-0">
+                Managing Director, KITS, Govt of Karnataka. 
+              </h1>
+            </div>
+            
+            {/* Patron 3 */}
+            <div className="flex flex-col items-center gap-y-8">
+              <div className="w-48 h-48">
+                <img
+                  src="/F V Manvi.jpg"
+                  alt="Title Sponsor Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h4 className="text-2xl text-[#FF6B35] text-center mb-0">
+                Dr. F. V. Manvi  
+              </h4>
+              <h1 className="text-base text-blue-600 text-center -mt-0">
+                Chairman, Governing Council,SGBIT, Belagavi 
+              </h1>
+            </div>
+
+             {/* Patron 4 */}
+             <div className="flex flex-col items-center gap-y-8">
+              <div className="w-48 h-48">
+                <img
+                  src="/B R Patagundi.jpg"
+                  alt="Title Sponsor Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h4 className="text-2xl text-[#FF6B35] text-center mb-0">
+                 Dr. B. R. Patagundi
+              </h4>
+              <h1 className="text-base text-blue-600 text-center -mt-0">
+                Principal, SGBIT, Belagavi.
+              </h1>
+            </div>
+
+          </div>
+        </div>
 
           {/* Faculty Co-ordinators */}
           <div className="mb-16">
@@ -510,21 +598,6 @@ export default function HackathonWebsite() {
                 ))}
               </div>
             </div>
-
-            {/* Become a Sponsor CTA */}
-            <div className="text-center">
-              <Card className="border-2 border-[#FF6B35] bg-white p-8 max-w-2xl mx-auto">
-                <h3 className="text-2xl font-bold text-[#8B4513] mb-4">Want to Sponsor HackFest?</h3>
-                <p className="text-[#8B4513] mb-6">
-                  Join our amazing sponsors and support the next generation of innovators. Get your brand in front of 500+
-                  talented developers and entrepreneurs.
-                </p>
-                <button className="sketchy-btn bg-[#FF6B35] text-white px-8 py-3 text-lg font-semibold">
-                  Become a Sponsor
-                </button>
-              </Card>
-            </div>
-          
         </div>
       </section>
 
@@ -532,100 +605,37 @@ export default function HackathonWebsite() {
       <section className="py-16 px-4 bg-white relative overflow-hidden">
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-12">
-            <h3 className="text-2xl font-bold text-[#8B4513] mb-8">Supports</h3>
+            <h3 className="text-2xl font-bold text-[#8B4513] mb-8">Supported By </h3>
 
             {/* Media logos container with sketchy border */}
             <div className="relative max-w-5xl mx-auto">
-              <div className="bg-[#F5F5DC] border-4 border-[#FF6B35] rounded-2xl p-8 transform -rotate-1 shadow-lg overflow-hidden">
+              <div className="bg-[#F5F5DC] border-4 border-[#FF6B35] rounded-2xl p-8 transform -rotate-0 shadow-lg overflow-hidden">
                 {/* Scrolling logos container */}
                 <div className="logos-scroll">
-                  <div className="logos-track">
-                    {/* First set of logos */}
-                    <div className="flex items-center justify-center h-12 mx-8">
-                      <img
-                        src="/placeholder.svg?height=40&width=120"
-                        alt="TechCrunch"
-                        className="max-h-full max-w-full object-contain opacity-70"
-                      />
-                    </div>
-                    <div className="flex items-center justify-center h-12 mx-8">
-                      <img
-                        src="/placeholder.svg?height=40&width=120"
-                        alt="Wired"
-                        className="max-h-full max-w-full object-contain opacity-70"
-                      />
-                    </div>
-                    <div className="flex items-center justify-center h-12 mx-8">
-                      <img
-                        src="/placeholder.svg?height=40&width=120"
-                        alt="Forbes"
-                        className="max-h-full max-w-full object-contain opacity-70"
-                      />
-                    </div>
-                    <div className="flex items-center justify-center h-12 mx-8">
-                      <img
-                        src="/placeholder.svg?height=40&width=120"
-                        alt="VentureBeat"
-                        className="max-h-full max-w-full object-contain opacity-70"
-                      />
-                    </div>
-                    <div className="flex items-center justify-center h-12 mx-8">
-                      <img
-                        src="/placeholder.svg?height=40&width=120"
-                        alt="The Verge"
-                        className="max-h-full max-w-full object-contain opacity-70"
-                      />
-                    </div>
-                    <div className="flex items-center justify-center h-12 mx-8">
-                      <img
-                        src="/placeholder.svg?height=40&width=120"
-                        alt="Mashable"
-                        className="max-h-full max-w-full object-contain opacity-70"
-                      />
-                    </div>
+                  <div className="overflow-hidden py-8 bg-white">
+                    <div className="whitespace-nowrap animate-scroll flex">
+                      {[...Array(2)].flatMap(() => (
+                        <>
+                         <div className="overflow-x-auto">
+                          <div className="flex flex-nowrap gap-8 px-4 py-4">
+                            <div className="h-32 w-40 flex items-center justify-center">
+                              <img src="/Startup Karnataka.png" alt="Logo 1" className="h-full w-auto object-contain opacity-80" />
+                            </div>
+                            <div className="h-32 w-40 flex items-center justify-center">
+                              <img src="/new_age_incubation_network_nain_center_nmamit_logo.jpeg" alt="Logo 2" className="h-full w-auto object-contain opacity-80" />
+                            </div>
+                            <div className="h-32 w-40 flex items-center justify-center">
+                              <img src="/K Tech.jpeg" alt="Logo 3" className="h-full w-auto object-contain opacity-80" />
+                            </div>
+                            <div className="h-32 w-40 flex items-center justify-center">
+                              <img src="/IIITD.jpg" alt="Logo 4" className="h-full w-auto object-contain opacity-80" />
+                            </div>
+                          </div>
+                        </div>
 
-                    {/* Duplicate set for seamless loop */}
-                    <div className="flex items-center justify-center h-12 mx-8">
-                      <img
-                        src="/placeholder.svg?height=40&width=120"
-                        alt="TechCrunch"
-                        className="max-h-full max-w-full object-contain opacity-70"
-                      />
-                    </div>
-                    <div className="flex items-center justify-center h-12 mx-8">
-                      <img
-                        src="/placeholder.svg?height=40&width=120"
-                        alt="Wired"
-                        className="max-h-full max-w-full object-contain opacity-70"
-                      />
-                    </div>
-                    <div className="flex items-center justify-center h-12 mx-8">
-                      <img
-                        src="/placeholder.svg?height=40&width=120"
-                        alt="Forbes"
-                        className="max-h-full max-w-full object-contain opacity-70"
-                      />
-                    </div>
-                    <div className="flex items-center justify-center h-12 mx-8">
-                      <img
-                        src="/placeholder.svg?height=40&width=120"
-                        alt="VentureBeat"
-                        className="max-h-full max-w-full object-contain opacity-70"
-                      />
-                    </div>
-                    <div className="flex items-center justify-center h-12 mx-8">
-                      <img
-                        src="/placeholder.svg?height=40&width=120"
-                        alt="The Verge"
-                        className="max-h-full max-w-full object-contain opacity-70"
-                      />
-                    </div>
-                    <div className="flex items-center justify-center h-12 mx-8">
-                      <img
-                        src="/placeholder.svg?height=40&width=120"
-                        alt="Mashable"
-                        className="max-h-full max-w-full object-contain opacity-70"
-                      />
+
+                                </>
+                      ))}
                     </div>
                   </div>
                 </div>
