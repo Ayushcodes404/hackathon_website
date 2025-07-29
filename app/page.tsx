@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin, Users, Trophy, Code, Lightbulb } from "lucide-react"
 import Link from "next/link"
 import { useState, useEffect } from "react"
+import * as React from "react";
 
 export default function HackathonWebsite() {
   const [isLoading, setIsLoading] = useState(true)
@@ -546,58 +547,11 @@ export default function HackathonWebsite() {
         </div>
 
           {/* Faculty Co-ordinators */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">Faculty Co-ordinators</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-              {[1, 2, 3, 4].map((sponsor) => (
-                <Card key={sponsor} className="border-2 border-[#8B4513] bg-white p-4">
-                  <div className="flex items-center justify-center h-16">
-                    <img
-                      src={`/placeholder.svg?height=60&width=150&query=software company logo ${sponsor}`}
-                      alt={`Silver Sponsor ${sponsor} Logo`}
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
-                </Card>
-              ))}
-            </div>
-          </div>
-
+          
           {/* Tech Team*/}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">Tech Team</h3>
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-4 max-w-6xl mx-auto">
-              {[1, 2, 3, 4, 5, 6].map((sponsor) => (
-                <Card key={sponsor} className="border-2 border-[#8B4513] bg-white p-3">
-                  <div className="flex items-center justify-center h-12">
-                    <img
-                      src={`/placeholder.svg?height=40&width=120&query=tech brand logo ${sponsor}`}
-                      alt={`Bronze Sponsor ${sponsor} Logo`}
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
-                </Card>
-              ))}
-            </div>
-          </div>
+          
           
             {/* Community Partners */}
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">Community Partners</h3>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
-                {[1, 2, 3, 4, 5].map((partner) => (
-                  <div key={partner} className="bg-white p-3 rounded-lg border border-[#8B4513]">
-                    <div className="flex items-center justify-center h-10">
-                      <img
-                        src={`/placeholder.svg?height=30&width=100&query=community organization logo ${partner}`}
-                        alt={`Community Partner ${partner} Logo`}
-                        className="max-h-full max-w-full object-contain"
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
         </div>
       </section>
 
@@ -728,7 +682,7 @@ export default function HackathonWebsite() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-300">
-                <li>hello@hackfest2024.com</li>
+                <li>sgbitwork@gmail.com</li>
                 <li>+1 (555) 123-4567</li>
                 <li>Belgaum, Karnataka</li>
               </ul>
