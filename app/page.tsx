@@ -730,7 +730,7 @@ export default function HackathonWebsite() {
               <ul className="space-y-2 text-gray-300">
                 <li>hello@hackfest2024.com</li>
                 <li>+1 (555) 123-4567</li>
-                <li>San Francisco, CA</li>
+                <li>Belgaum, Karnataka</li>
               </ul>
             </div>
             <div>
