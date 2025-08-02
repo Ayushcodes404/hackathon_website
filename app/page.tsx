@@ -425,6 +425,24 @@ export default function HackathonWebsite() {
             </p>
           </div>
 
+
+          {/* Swamiji */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">with the blessings of</h3>
+            <div className="flex justify-center gap-x-8">
+            {/* Card 1 */}
+            <div className="flex flex-col items-center gap-y-4">
+              <div className="w-48 h-48">
+                <img
+                  src="/shivabasava_mahaswamiji.jpg"
+                  alt="Title Sponsor Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </div>
+            </div>
+          </div>
+
           {/* Patrons*/}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">CHIEF PATRONS</h3>
@@ -469,7 +487,8 @@ export default function HackathonWebsite() {
           </div>
 
           </div>
-
+          
+          
           {/* PATRONS */}
           <div className="mb-16">
           <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">PATRONS</h3>
@@ -637,7 +656,7 @@ export default function HackathonWebsite() {
             </button>
             <div className="flex items-center space-x-2 text-white">
               <MapPin className="h-6 w-6" />
-              <span className="text-lg">San Francisco, CA</span>
+              <span className="text-lg">Belgaum, Karnataka, India</span>
             </div>
           </div>
         </div>
