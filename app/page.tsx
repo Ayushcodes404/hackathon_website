@@ -428,7 +428,7 @@ export default function HackathonWebsite() {
 
           {/* Swamiji */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">with the blessings of</h3>
+            <h3 className="text-2xl font-bold text-[#8B4513] text-center mb-8">"With the divine blessings of Swamiji, we dedicate HackFest to nurturing innovation with values and vision."</h3>
             <div className="flex justify-center gap-x-8">
             {/* Card 1 */}
             <div className="flex flex-col items-center gap-y-4">
@@ -439,6 +439,9 @@ export default function HackathonWebsite() {
                   className="w-full h-full object-contain"
                 />
               </div>
+              <h4 className="text-2xl text-[#FF6B35] text-center mb-0">
+                Shivabasava Mahaswamiji 
+              </h4>
             </div>
             </div>
           </div>
