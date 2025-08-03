@@ -639,7 +639,7 @@ export default function HackathonWebsite() {
               <div className="flex flex-col items-center gap-y-2">
                 <div className="w-48 h-48">
                   <img
-                    src="/Shubham_H.jpeg "
+                    src="/shubham_H.jpeg "
                     alt="Shubham"
                     className="w-full h-full object-contain"
                   />
