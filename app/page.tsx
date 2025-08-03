@@ -110,6 +110,9 @@ export default function HackathonWebsite() {
               <Link href="#CHIEF_PATRON" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Team
               </Link>
+              <Link href="#general_rules" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+                Rules
+              </Link>
               <Link href="/wait" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Problem Statements
               </Link>
@@ -254,65 +257,6 @@ export default function HackathonWebsite() {
           <div className="w-full my-8 flex justify-center items-center">
             <img src="/schedule.png" alt="Schedule Roadmap" className="w-full h-auto object-contain rounded-xl shadow-lg border-2 border-[#8B4513] bg-white" />
           </div>
-
-          {/* Mobile Version - Simplified */}
-          <div className="block md:hidden mt-8">
-            <div className="space-y-6">
-              {[
-                {
-                  step: 1,
-                  time: "Friday 6:00 PM",
-                  title: "Registration & Check-in",
-                  color: "border-[#8B4513]",
-                  textColor: "text-[#8B4513]",
-                },
-                {
-                  step: 2,
-                  time: "Friday 8:00 PM",
-                  title: "Opening Ceremony",
-                  color: "border-[#FF6B35]",
-                  textColor: "text-[#FF6B35]",
-                },
-                {
-                  step: 3,
-                  time: "Saturday 8:00 AM",
-                  title: "Breakfast & Networking",
-                  color: "border-[#8B4513]",
-                  textColor: "text-[#8B4513]",
-                },
-                {
-                  step: 4,
-                  time: "Saturday 6:00 PM",
-                  title: "Dinner & Mentorship",
-                  color: "border-[#FF6B35]",
-                  textColor: "text-[#FF6B35]",
-                },
-                {
-                  step: 5,
-                  time: "Sunday 10:00 AM",
-                  title: "Final Sprint",
-                  color: "border-[#8B4513]",
-                  textColor: "text-[#8B4513]",
-                },
-                {
-                  step: 6,
-                  time: "Sunday 5:00 PM",
-                  title: "Awards Ceremony",
-                  color: "border-[#FF6B35]",
-                  textColor: "text-[#FF6B35]",
-                },
-              ].map((item) => (
-                <div key={item.step} className={`bg-white p-4 rounded-lg border-2 ${item.color} shadow-lg`}>
-                  <h3 className={`font-bold ${item.textColor} text-lg mb-2`}>STEP {item.step}</h3>
-                  <p className="text-sm text-[#8B4513]">
-                    <strong>{item.time}</strong>
-                    <br />
-                    {item.title}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
@@ -423,7 +367,7 @@ export default function HackathonWebsite() {
           
           {/* PATRONS */}
           <div className="mb-16">
-          <h3 className="text-1xl font-bold text-[#FF6B35] text-center mb-8">PATRONS</h3>
+          <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">PATRONS</h3>
 
           <div className="flex justify-center gap-x-12">
             {/* Patron 1 */}
@@ -517,11 +461,241 @@ export default function HackathonWebsite() {
         </div>
 
           {/* Faculty Co-ordinators */}
+          <div className="mb-16">
+            <div className="flex justify-center gap-x-12">
+              {/* Patron 1 */}
+              <div className="flex flex-col items-center gap-y-2">
+                <div className="w-48 h-48">
+                  <img
+                    src="/prashant_bhagwati.jpg"
+                    alt="Title Sponsor Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  Dr. Prashant Bhagawati 
+                </h4>
+                <h1 className="text-base text-blue-600 text-center -mt-0">
+                  District Innovation Associate (DIA). 
+                </h1>
+              </div>
+              {/* Patron 2 */}
+              <div className="flex flex-col items-center gap-y-2">
+                <div className="w-48 h-48">
+                  <img
+                    src="/sanjeev.jpg"
+                    alt="Title Sponsor Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  Dr. Sanjeev Kulkarni 
+                </h4>
+                <h1 className="text-base text-blue-600 text-center -mt-0">
+                  NAIN 2.0 Coordinator. 
+                </h1>
+              </div>
+              {/* Patron 3 */}
+              <div className="flex flex-col items-center gap-y-2">
+                <div className="w-48 h-48">
+                  <img
+                    src="/manjunath_s.jpg"
+                    alt="Title Sponsor Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                   Mr. Manjunath Sharanappanavar 
+                </h4>
+                <h1 className="text-base text-blue-600 text-center -mt-0">
+                  Management Information System (MIS)-Executive. 
+                </h1>
+              </div>
+              {/* Patron 4 */}
+              <div className="flex flex-col items-center gap-y-2">
+                <div className="w-48 h-48">
+                  <img
+                    src="/suresh_a.jpeg"
+                    alt="Title Sponsor Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  Dr. Suresh Akkole
+                </h4>
+                <h1 className="text-base text-blue-600 text-center -mt-0">
+                  Dean, Reasearch & Development<br/> SGBIT, Belagavi.  
+                </h1>
+              </div>
+            </div>
+          </div>
           
-          {/* Tech Team*/}
+          {/*Conveyners*/}
+          <div className="mb-16">
+          <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">CONVENERS</h3>
+            <div className="flex justify-center gap-x-12">
+              {/* Patron 1 */}
+              <div className="flex flex-col items-center gap-y-2">
+                <div className="w-48 h-48">
+                  <img
+                    src="/cs_hod.jpg"
+                    alt="Title Sponsor Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  Dr. B. S. Halakarnimath 
+                </h4>
+                <h1 className="text-base text-blue-600 text-center -mt-0">
+                Professor & HOD ,CSE <br/> SGBIT, Belagavi. 
+                </h1>
+              </div>
+
+              {/* Patron 2 */}
+              <div className="flex flex-col items-center gap-y-2">
+                <div className="w-48 h-48">
+                  <img
+                    src="/Ashok_H.jpeg"
+                    alt="Title Sponsor Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  Dr. Ashok M. Hulagabali
+                </h4>
+                <h1 className="text-base text-blue-600 text-center -mt-0">
+                  Dean Academics <br/> SGBIT, Belagavi. 
+                </h1>
+              </div>
+            </div>
+          </div>
           
-          
-            {/* Community Partners */}
+          {/* CO-CONVENERS */}
+          <div className="mb-16">
+          <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">CO-CONVENERS</h3>
+            <div className="flex justify-center gap-x-12">
+              {/* Patron 1 */}
+              <div className="flex flex-col items-center gap-y-2">
+                <div className="w-48 h-48">
+                  <img
+                    src=" "
+                    alt="Shailaja Mali"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  Dr. Shailaja Mali
+                </h4>
+              </div>
+              {/* Patron 2 */}
+              <div className="flex flex-col items-center gap-y-2">
+                <div className="w-48 h-48">
+                  <img
+                    src="/rajeshwari_k.jpeg"
+                    alt="Title Sponsor Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  Prof. Rajeshwari Kisan 
+                </h4>
+                
+              </div>
+              {/* Patron 3 */}
+              <div className="flex flex-col items-center gap-y-2">
+                <div className="w-48 h-48">
+                  <img
+                    src=""
+                    alt="Suvarna Patil"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  Prof. Suvarna Patil 
+                </h4>
+                
+              </div>
+              {/* Patron 4 */}
+              <div className="flex flex-col items-center gap-y-2">
+                <div className="w-48 h-48">
+                  <img
+                    src="/ks.jpeg"
+                    alt="Title Sponsor Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  Prof. Kshitij Sheth 
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          {/* Student Co-odrinators */}
+          <div className="mb-16">
+          <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">Student Co-ordinators</h3>
+            <div className="flex justify-center gap-x-12">
+              {/* Student 1 */}
+              <div className="flex flex-col items-center gap-y-2">
+                <div className="w-48 h-48">
+                  <img
+                    src="/Shubham_H.jpeg "
+                    alt="Shubham"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  Shubham Hiremath
+                </h4>
+              </div>
+              {/* Student 2 */}
+              <div className="flex flex-col items-center gap-y-2">
+                <div className="w-48 h-48">
+                  <img
+                    src="/Suyog H.jpeg "
+                    alt="Shubham"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  Suyog Hanamar
+                </h4>
+              </div>
+
+              {/* Student 3 */}
+              <div className="flex flex-col items-center gap-y-2">
+                <div className="w-48 h-48">
+                  <img
+                    src="/Chirag_K.jpeg "
+                    alt="Shubham"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  Chirag Kamble
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-16">
+          <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">Website & Technology Lead</h3>
+            <div className="flex justify-center gap-x-12">
+              {/* Student 1 */}
+              <div className="flex flex-col items-center gap-y-2">
+                <div className="w-48 h-48">
+                  <img
+                    src="/ayush_me.jpeg "
+                    alt="Ayush"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  Ayush K Tammannavar
+                </h4>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -575,6 +749,65 @@ export default function HackathonWebsite() {
         </div>
       </section>
 
+      <section id="general_rules" className="py-20 px-4 bg-[#F5F5DC] relative overflow-hidden">
+      <div className="container mx-auto relative z-10">
+        <div className="bg-white border border-[#8B4513] rounded-2xl shadow-lg p-8 max-w-auto mx-auto">
+          <div className="text-center mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#8B4513] mb-8">General Rules</h2>
+            <div className="text-xl text-[#8B4513] max-w">
+            <div className="space-y-4 text-[#8B4513] text-lg text-left">
+            <div className="flex items-start ">
+              <span className="mr-2">•</span>
+              <span>Teams must strictly follow the provided PPT template for Round 1. Any modifications may lead to disqualification.</span>
+            </div>
+            <div className="flex items-start ">
+              <span className="mr-2">•</span>
+              <span>The decision of the judges will be final and binding.</span>
+            </div>
+            <div className="flex items-start">
+              <span className="mr-2">•</span>
+              <span>Teams from NAIN-hosted colleges are exempted from registration fees. Teams from other colleges are required to pay.</span>
+            </div>
+            <div className="flex items-start">
+              <span className="mr-2">•</span>
+              <span>Each team must include at least one female member. Teams can have up to 3 members, with a ₹500 registration fee.</span>
+            </div>
+            <div className="flex items-start">
+              <span className="mr-2">•</span>
+              <span>Participants must choose one problem statement from the listed domains and adhere to it throughout the event.</span>
+            </div>
+            <div className="flex items-start">
+              <span className="mr-2">•</span>
+              <span>In Round 1, teams must present their idea along with any initial implementation.</span>
+            </div>
+            <div className="flex items-start">
+              <span className="mr-2">•</span>
+              <span>In Round 2, teams must present improvements based on feedback from the judges.</span>
+            </div>
+            <div className="flex items-start">
+              <span className="mr-2">•</span>
+              <span>In Round 3, the final implementation must be presented.</span>
+            </div>
+            <div className="flex items-start">
+              <span className="mr-2">•</span>
+              <span>Ideas must showcase novelty, innovation, and the use of open-source tools and technologies.</span>
+            </div>
+          </div>
+
+            </div>
+          </div>
+        </div>
+        <div className="PPT_Template text-center mt-6">
+          <a
+            href="/downloads/PPT_Template.pptx" // Replace this with your actual file path
+            download
+            className="sketchy-btn bg-[#FF6B35] text-white px-6 py-2 font-semibold"
+          >
+            Download PPT Template
+          </a>
+        </div>
+      </div>
+      </section>
       {/* CTA Section */}
       <section className="py-20 px-4 bg-[#FF6B35] relative overflow-hidden">
         {/* Left side illustration */}
@@ -600,6 +833,7 @@ export default function HackathonWebsite() {
           </div>
         </div>
       </section>
+
 
       {/* Footer */}
       <footer className="bg-[#8B4513] text-white py-12 px-4">
