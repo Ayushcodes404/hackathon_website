@@ -799,7 +799,7 @@ export default function HackathonWebsite() {
         </div>
         <div className="PPT_Template text-center mt-6">
           <a
-            href="/downloads/PPT_Template.pptx" // Replace this with your actual file path
+            href="/Hackfest.ppt.pptx" // Replace this with your actual file path
             download
             className="sketchy-btn bg-[#FF6B35] text-white px-6 py-2 font-semibold"
           >
