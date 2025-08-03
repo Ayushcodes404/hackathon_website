@@ -55,7 +55,7 @@ export default function HackathonWebsite() {
           {/* Loading Text */}
           <div className="space-y-4">
             <h1 className="text-4xl font-bold text-[#8B4513]">
-              <span className="text-[#FF6B35]">HACK</span>FEST 2024
+              <span className="text-[#FF6B35]">HACK</span>FEST 2025
             </h1>
             <div className="flex items-center justify-center space-x-2">
               <div className="flex space-x-1">
@@ -82,20 +82,6 @@ export default function HackathonWebsite() {
               ></div>
             </div>
           </div>
-
-          {/* Floating Elements */}
-          <div className="absolute top-20 left-20 animate-bounce" style={{ animationDelay: "0.5s" }}>
-            <div className="w-4 h-4 bg-[#FF6B35] rounded-full opacity-60"></div>
-          </div>
-          <div className="absolute top-40 right-32 animate-bounce" style={{ animationDelay: "1s" }}>
-            <div className="w-3 h-3 bg-[#8B4513] rounded-full opacity-60"></div>
-          </div>
-          <div className="absolute bottom-32 left-40 animate-bounce" style={{ animationDelay: "1.5s" }}>
-            <div className="w-5 h-5 bg-[#FF6B35] rounded-full opacity-60"></div>
-          </div>
-          <div className="absolute bottom-20 right-20 animate-bounce" style={{ animationDelay: "2s" }}>
-            <div className="w-3 h-3 bg-[#8B4513] rounded-full opacity-60"></div>
-          </div>
         </div>
       </div>
     )
@@ -109,7 +95,7 @@ export default function HackathonWebsite() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Code className="h-8 w-8 text-[#FF6B35]" />
-              <h1 className="text-2xl font-bold text-[#8B4513]">HackFest 2024</h1>
+              <h1 className="text-2xl font-bold text-[#8B4513]">HackFest 2025</h1>
             </div>
             <nav className="hidden md:flex items-center space-x-6">
               <Link href="#about" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
@@ -121,7 +107,7 @@ export default function HackathonWebsite() {
               <Link href="#prizes" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Prizes
               </Link>
-              <Link href="#sponsors" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+              <Link href="#CHIEF_PATRON" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Team
               </Link>
               <Link href="/wait" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
@@ -245,6 +231,11 @@ export default function HackathonWebsite() {
         </div>
       </section>
 
+      {/*Rules */}
+      <section>
+        
+      </section>
+
       {/* Schedule Section */}
       <section id="schedule" className="py-20 px-4 bg-[#F5F5DC] relative overflow-hidden">
         <div className="container mx-auto relative z-10">
@@ -327,19 +318,6 @@ export default function HackathonWebsite() {
 
       {/* Prizes Section */}
       <section id="prizes" className="py-20 px-4 bg-white relative overflow-hidden">
-        {/* Left side illustration */}
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/3 hidden lg:block">
-          <img src="/placeholder.svg?height=350&width=280" alt="Prizes illustration" className="opacity-15 rotate-6" />
-        </div>
-
-        {/* Right side illustration */}
-        <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/3 hidden lg:block">
-          <img
-            src="/placeholder.svg?height=320&width=260"
-            alt="Rewards illustration"
-            className="opacity-15 -rotate-6"
-          />
-        </div>
 
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
@@ -347,13 +325,14 @@ export default function HackathonWebsite() {
             <p className="text-xl text-[#8B4513]">$50,000 in total prizes and opportunities</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="flex justify-center items-center"></div>
             <Card className="border-4 border-[#FF6B35] bg-[#F5F5DC] text-center">
               <CardHeader>
                 <Trophy className="h-16 w-16 text-[#FF6B35] mx-auto mb-4" />
                 <CardTitle className="text-3xl text-[#8B4513]">1st Place</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-4xl font-bold text-[#FF6B35] mb-4">$20,000</div>
+                <div className="text-4xl font-bold it text-[#FF6B35] mb-4">$20,000</div>
                 <ul className="text-[#8B4513] space-y-2">
                   <li>• Cash Prize</li>
                   <li>• Mentorship Program</li>
@@ -361,60 +340,13 @@ export default function HackathonWebsite() {
                   <li>• Tech Conference Tickets</li>
                 </ul>
               </CardContent>
-            </Card>
-            <Card className="border-4 border-[#8B4513] bg-[#F5F5DC] text-center">
-              <CardHeader>
-                <Trophy className="h-16 w-16 text-[#8B4513] mx-auto mb-4" />
-                <CardTitle className="text-3xl text-[#8B4513]">2nd Place</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="text-4xl font-bold text-[#FF6B35] mb-4">$12,000</div>
-                <ul className="text-[#8B4513] space-y-2">
-                  <li>• Cash Prize</li>
-                  <li>• Tech Gadgets</li>
-                  <li>• Online Course Access</li>
-                  <li>• Networking Opportunities</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card className="border-4 border-[#8B4513] bg-[#F5F5DC] text-center">
-              <CardHeader>
-                <Trophy className="h-16 w-16 text-[#8B4513] mx-auto mb-4" />
-                <CardTitle className="text-3xl text-[#8B4513]">3rd Place</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="text-4xl font-bold text-[#FF6B35] mb-4">$8,000</div>
-                <ul className="text-[#8B4513] space-y-2">
-                  <li>• Cash Prize</li>
-                  <li>• Premium Software Licenses</li>
-                  <li>• Workshop Access</li>
-                  <li>• Certificate of Achievement</li>
-                </ul>
-              </CardContent>
-            </Card>
+            </Card>     
           </div>
         </div>
       </section>
 
       {/* Patron Section */}
-      <section id="CHIEF PATRON" className="py-20 px-4 bg-[#F5F5DC] relative overflow-hidden">
-        {/* Left side illustration */}
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/3 hidden lg:block">
-          <img
-            src="/placeholder.svg?height=300&width=250"
-            alt="Partnership illustration"
-            className="opacity-15 rotate-6"
-          />
-        </div>
-
-        {/* Right side illustration */}
-        <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/3 hidden lg:block">
-          <img
-            src="/placeholder.svg?height=320&width=260"
-            alt="Corporate illustration"
-            className="opacity-15 -rotate-6"
-          />
-        </div>
+      <section id="CHIEF_PATRON" className="py-20 px-4 bg-[#F5F5DC] relative overflow-hidden">
 
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
@@ -449,9 +381,9 @@ export default function HackathonWebsite() {
           {/* Patrons*/}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">CHIEF PATRONS</h3>
-            <div className="flex justify-center gap-x-8">
+            <div className="flex justify-center gap-x-14">
             {/* Card 1 */}
-            <div className="flex flex-col items-center gap-y-4">
+            <div className="flex flex-col items-center gap-y-2">
               <div className="w-48 h-48">
                 <img
                   src="/siddarama_swamiji.jpg"
@@ -463,15 +395,12 @@ export default function HackathonWebsite() {
                 Dr. Tontada Siddharama Mahaswamiji 
               </h4>
               <h1 className="text-base text-blue-600 text-center -mt-0">
-                Yedeyuru Shri Jagadguru Tontadarya Samsthana Math, 
-              </h1>
-              <h1 className="text-base text-blue-600 text-center -mt-0">
-                 Dambal-Gadag 
+                Yedeyuru Shri Jagadguru Tontadarya Samsthana Math,<br/>Dambal-Gadag 
               </h1>
             </div>
 
             {/* Card 2 */}
-            <div className="flex flex-col items-center gap-y-4">
+            <div className="flex flex-col items-center gap-y-2">
               <div className="w-48 h-48">
                 <img
                   src="/alamprabhu_maha_swamiji.jpg"
@@ -483,7 +412,7 @@ export default function HackathonWebsite() {
                Dr. Allamaprabhu Mahaswamiji 
               </h4>
               <h1 className="text-base text-blue-600 text-center -mt-0">
-                Naganuru Shri Rudrakshimath, Belagavi. 
+                Naganuru Shri Rudrakshimath,<br/> Belagavi. 
               </h1>
 
             </div>
@@ -494,11 +423,11 @@ export default function HackathonWebsite() {
           
           {/* PATRONS */}
           <div className="mb-16">
-          <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">PATRONS</h3>
+          <h3 className="text-1xl font-bold text-[#FF6B35] text-center mb-8">PATRONS</h3>
 
           <div className="flex justify-center gap-x-12">
             {/* Patron 1 */}
-            <div className="flex flex-col items-center gap-y-8">
+            <div className="flex flex-col items-center gap-y-2">
               <div className="w-48 h-48">
                 <img
                   src="/Mahadeva_Prasanna.jpeg"
@@ -506,16 +435,16 @@ export default function HackathonWebsite() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h4 className="text-2xl text-[#FF6B35] text-center mb-0">
+              <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
                 Prof. S. R. Mahadeva Prasanna  
               </h4>
               <h1 className="text-base text-blue-600 text-center -mt-0">
-                Director, IIIT Dharwad. 
+                Director,<br/>IIIT Dharwad. 
               </h1>
             </div>
 
             {/* Patron 2 */}
-            <div className="flex flex-col items-center gap-y-8">
+            <div className="flex flex-col items-center gap-y-2">
               <div className="w-48 h-48">
                 <img
                   src="/Rahul-Sharanappa-Sankanur.jpg"
@@ -523,16 +452,35 @@ export default function HackathonWebsite() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h4 className="text-2xl text-[#FF6B35] text-center mb-0">
+              <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
                 Shri Rahul Sharanappa Sankanur  
               </h4>
               <h1 className="text-base text-blue-600 text-center -mt-0">
-                Managing Director, KITS, Govt of Karnataka. 
+                Managing Director, <br/>KITS, Govt of Karnataka. 
               </h1>
             </div>
             
             {/* Patron 3 */}
-            <div className="flex flex-col items-center gap-y-8">
+            <div className="flex flex-col items-center gap-y-2">
+              <div className="w-48 h-48">
+                <img
+                  src="/Nithin__Chakki.jpg"
+                  alt="Title Sponsor Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                Mr. Nithin Chakki
+              </h4>
+              <h1 className="text-base text-blue-600 text-center -mt-0">
+               General Manager,<br />
+               KITS, Govt of Karnataka.
+              </h1>
+            </div>
+
+
+            {/* Patron 4 */}
+            <div className="flex flex-col items-center gap-y-2">
               <div className="w-48 h-48">
                 <img
                   src="/F V Manvi.jpg"
@@ -540,16 +488,16 @@ export default function HackathonWebsite() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h4 className="text-2xl text-[#FF6B35] text-center mb-0">
+              <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
                 Dr. F. V. Manvi  
               </h4>
               <h1 className="text-base text-blue-600 text-center -mt-0">
-                Chairman, Governing Council,SGBIT, Belagavi 
+                Chairman, Governing Council,<br/>SGBIT, Belagavi 
               </h1>
             </div>
 
-             {/* Patron 4 */}
-             <div className="flex flex-col items-center gap-y-8">
+             {/* Patron 5 */}
+             <div className="flex flex-col items-center gap-y-2">
               <div className="w-48 h-48">
                 <img
                   src="/B R Patagundi.jpg"
@@ -557,11 +505,11 @@ export default function HackathonWebsite() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h4 className="text-2xl text-[#FF6B35] text-center mb-0">
+              <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
                  Dr. B. R. Patagundi
               </h4>
               <h1 className="text-base text-blue-600 text-center -mt-0">
-                Principal, SGBIT, Belagavi.
+                Principal,<br/>SGBIT, Belagavi.
               </h1>
             </div>
 
@@ -623,10 +571,6 @@ export default function HackathonWebsite() {
               <div className="absolute top-1/2 -left-4 w-4 h-4 bg-[#FF6B35] rounded-full transform -translate-y-1/2 rotate-45"></div>
               <div className="absolute top-1/4 -right-4 w-3 h-3 bg-[#8B4513] rounded-full transform rotate-12"></div>
             </div>
-
-            <p className="text-sm text-[#8B4513] mt-6 opacity-80">
-              HackFest has been featured in leading tech publications and media outlets
-            </p>
           </div>
         </div>
       </section>
@@ -634,18 +578,8 @@ export default function HackathonWebsite() {
       {/* CTA Section */}
       <section className="py-20 px-4 bg-[#FF6B35] relative overflow-hidden">
         {/* Left side illustration */}
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/4 hidden lg:block">
-          <img src="/placeholder.svg?height=300&width=250" alt="Rocket launch" className="opacity-20 rotate-12" />
-        </div>
 
         {/* Right side illustration */}
-        <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/4 hidden lg:block">
-          <img
-            src="/placeholder.svg?height=280&width=230"
-            alt="Network connections"
-            className="opacity-20 -rotate-12"
-          />
-        </div>
 
         <div className="container mx-auto text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Hack?</h2>
@@ -654,9 +588,11 @@ export default function HackathonWebsite() {
             collaboration.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link href="/wait">
             <button className="sketchy-btn bg-white text-[#FF6B35] px-8 py-4 text-xl font-semibold">
               Register Now - It's Free!
             </button>
+            </Link>
             <div className="flex items-center space-x-2 text-white">
               <MapPin className="h-6 w-6" />
               <span className="text-lg">Belgaum, Karnataka, India</span>
@@ -695,8 +631,8 @@ export default function HackathonWebsite() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#sponsors" className="text-gray-300 hover:text-[#FF6B35]">
-                    Sponsors
+                  <Link href="#CHIEF_PATRON" className="text-gray-300 hover:text-[#FF6B35]">
+                    Team
                   </Link>
                 </li>
               </ul>
@@ -712,14 +648,11 @@ export default function HackathonWebsite() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
               <div className="flex space-x-4">
-                <Link href="#" className="text-gray-300 hover:text-[#FF6B35]">
-                  Twitter
+                <Link href="https://sgbit.edu.in/Home/trust" className="text-gray-300 hover:text-[#FF6B35]">
+                  Website
                 </Link>
-                <Link href="#" className="text-gray-300 hover:text-[#FF6B35]">
+                <Link href="https://www.linkedin.com/company/sgbit-belagavi/?originalSubdomain=in" className="text-gray-300 hover:text-[#FF6B35]">
                   LinkedIn
-                </Link>
-                <Link href="#" className="text-gray-300 hover:text-[#FF6B35]">
-                  Discord
                 </Link>
               </div>
             </div>
