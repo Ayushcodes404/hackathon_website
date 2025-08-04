@@ -207,7 +207,7 @@ export default function HackathonWebsite() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-[#8B4513] text-lg">
-                  Bring your wildest ideas to life. From AI to blockchain, IoT to web3 - the sky's the limit.
+                  Bring your wildest ideas to life. From AI to blockchain, IoT to cloud computing - the sky's the limit.
                 </CardDescription>
               </CardContent>
             </Card>
