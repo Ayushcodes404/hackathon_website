@@ -819,7 +819,7 @@ export default function HackathonWebsite() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="/wait">
             <button className="sketchy-btn bg-white text-[#FF6B35] px-8 py-4 text-xl font-semibold">
-              Register Now - It's Free!
+              Register Now 
             </button>
             </Link>
             <div className="flex items-center space-x-2 text-white">
@@ -871,7 +871,7 @@ export default function HackathonWebsite() {
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-300">
                 <li>sgbitwork@gmail.com</li>
-                <li>+1 (555) 123-4567</li>
+                <li>+91 9738783026</li>
                 <li>Belgaum, Karnataka</li>
               </ul>
             </div>
