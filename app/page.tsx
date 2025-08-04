@@ -116,6 +116,9 @@ export default function HackathonWebsite() {
               <Link href="/wait" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Problem Statements
               </Link>
+              <Link href="/help" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+                Help
+              </Link>
               <Link href="/wait">
                 <button className="sketchy-btn bg-[#FF6B35] text-white px-6 py-2 font-semibold">
                   Register Now
@@ -250,7 +253,7 @@ export default function HackathonWebsite() {
                 <span className="text-[#8B4513]">SCHEDULE</span>
               </h2>
             </div>
-            <p className="text-xl text-[#8B4513]">48 hours of non-stop innovation journey</p>
+            <p className="text-xl text-[#8B4513]">12 hours of non-stop innovation journey</p>
           </div>
 
           {/* Roadmap Container */}

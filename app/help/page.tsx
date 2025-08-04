@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import * as React from "react";
 
-export default function ProblemStatements() {
+export default function Help() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -96,7 +96,7 @@ export default function ProblemStatements() {
               <Link href="/wait" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Problem Statements
               </Link>
-              <Link href="/help" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+              <Link href="/wait" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Help
               </Link>
               <Link href="/wait">
@@ -108,6 +108,85 @@ export default function ProblemStatements() {
           </div>
         </div>
       </header>
+      <main className="container mx-auto px-4 py-12">
+      <h2 className="text-3xl font-bold text-[#8B4513] mb-8 text-center">Need Help? Contact Us</h2>
+
+      {/* Faculty Coordinators */}
+      <div className="mb-12">
+        <h3 className="text-2xl font-semibold text-[#FF6B35] mb-4">Faculty Coordinators</h3>
+        <div className="grid gap-6 md:grid-cols-2">
+          <Card>
+            <CardHeader>
+              <CardTitle>Prof.Rajeshwari Kisan</CardTitle>
+              <CardDescription>Co-convener</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-[#8B4513]">📧 rajeshwari.kisan@gmail.com</p>
+              <p className="text-[#8B4513]">📞 +91 9738783026</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Prof.Kshitij Sheth</CardTitle>
+              <CardDescription>Co-Convener</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-[#8B4513]">📧 kshitijsheth7@gmail.com</p>
+              <p className="text-[#8B4513]">📞 +91 8369962936</p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+
+      {/* Student Coordinators */}
+      <div>
+        <h3 className="text-2xl font-semibold text-[#FF6B35] mb-4">Student Coordinators</h3>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <Card>
+            <CardHeader>
+              <CardTitle>Ayush T</CardTitle>
+              <CardDescription>Website & Technology</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-[#8B4513]">📧 ayushtammannavar@gmail.com</p>
+              <p className="text-[#8B4513]">📞 +91 8861885724</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Suyog H</CardTitle>
+              <CardDescription>Student Co-ordinator</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-[#8B4513]">📧 syoghanamar21@gmail.com</p>
+              <p className="text-[#8B4513]">📞 +91 9986821707</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Chirag K</CardTitle>
+              <CardDescription>Student Co-ordinator</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-[#8B4513]">📧 chiragkamble1018@gmail.com</p>
+              <p className="text-[#8B4513]">📞 +91 9353037921</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Shubham H</CardTitle>
+              <CardDescription>Student Co-ordinator</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-[#8B4513]">📧 shubhamhiremath87@gmail.com</p>
+              <p className="text-[#8B4513]">📞 +91 9448339846</p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </main>
     </div>
   );
 }
+
+
