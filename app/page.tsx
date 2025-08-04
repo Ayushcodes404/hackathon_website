@@ -271,36 +271,72 @@ export default function HackathonWebsite() {
             <h2 className="text-4xl md:text-5xl font-bold text-[#8B4513] mb-6">Amazing Prizes</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="flex justify-center items-center"></div>
+          {/* First Card */}
+          <Card className="border-4 border-[#FF6B35] bg-[#F5F5DC] text-center">
+            <CardHeader>
+              <Trophy className="h-16 w-16 text-[#FF6B35] mx-auto mb-4" />
+              <CardTitle className="text-3xl text-[#8B4513]">1st Place</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="text-4xl font-bold text-[#FF6B35] mb-4">3,000</div>
+              <ul className="text-[#8B4513] space-y-2">
+                <li>Domain: Big Data Analytics </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* Second Card */}
+          <Card className="border-4 border-[#FF6B35] bg-[#F5F5DC] text-center">
+            <CardHeader>
+              <Trophy className="h-16 w-16 text-[#FF6B35] mx-auto mb-4" />
+              <CardTitle className="text-3xl text-[#8B4513]"> 1st Place</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="text-4xl font-bold text-[#FF6B35] mb-4">3,000</div>
+              <ul className="text-[#8B4513] space-y-2">
+                <li>• Domain: Bio Informatics </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* Third Card */}
+          <Card className="border-4 border-[#FF6B35] bg-[#F5F5DC] text-center">
+            <CardHeader>
+              <Trophy className="h-16 w-16 text-[#FF6B35] mx-auto mb-4" />
+              <CardTitle className="text-3xl text-[#8B4513]">1st Place</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="text-4xl font-bold text-[#FF6B35] mb-4">1,000</div>
+              <ul className="text-[#8B4513] space-y-2">
+                <li>• Domain: Cloud Computing</li>
+              </ul>
+            </CardContent>
+          </Card>
+          </div>
+          {/* fourth Card */}
+          <div className="flex justify-center items-center mt-8">
             <Card className="border-4 border-[#FF6B35] bg-[#F5F5DC] text-center">
               <CardHeader>
-                <Trophy className="h-16 w-16 text-[#FF6B35] mx-auto mb-4" />
+                <Trophy className="h-16 w-16 text-[#FF6B35] mx-auto mb-2" />
                 <CardTitle className="text-3xl text-[#8B4513]">1st Place</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-4xl font-bold it text-[#FF6B35] mb-4">3,000</div>
+                <div className="text-4xl font-bold text-[#FF6B35] mb-2">1,000</div>
                 <ul className="text-[#8B4513] space-y-2">
-                  <li>• Fixed Cash Prize per Domain</li>
+                  <li>• Domain: Internet of Things</li>
                 </ul>
               </CardContent>
-            </Card>     
+            </Card>
           </div>
+
+          
         </div>
       </section>
 
       {/* Patron Section */}
       <section id="CHIEF_PATRON" className="py-20 px-4 bg-[#F5F5DC] relative overflow-hidden">
 
-        <div className="container mx-auto relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#8B4513] mb-6">Our Amazing Team</h2>
-            <p className="text-xl text-[#8B4513] max-w-3xl mx-auto">
-              Thanks to our incredible Team who make HackFest possible and support the next generation of
-              innovators.
-            </p>
-          </div>
-
-
+        <div className="container mx-auto relative z-10">          
           {/* Swamiji */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-[#8B4513] text-center mb-8">"With the divine blessings of Swamiji, we dedicate HackFest to nurturing innovation with values and vision."</h3>
@@ -366,6 +402,13 @@ export default function HackathonWebsite() {
           
           {/* PATRONS */}
           <div className="mb-16">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#8B4513] mb-6">Our Amazing Team</h2>
+            <p className="text-xl text-[#8B4513] max-w-3xl mx-auto">
+              Thanks to our incredible Team who make HackFest possible and support the next generation of
+              innovators.
+            </p>
+          </div>
           <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">PATRONS</h3>
 
           <div className="flex justify-center gap-x-12">
@@ -494,22 +537,6 @@ export default function HackathonWebsite() {
                   NAIN 2.0 Coordinator. 
                 </h1>
               </div>
-              {/* Patron 3 */}
-              <div className="flex flex-col items-center gap-y-2">
-                <div className="w-48 h-48">
-                  <img
-                    src="/manjunath_s.jpg"
-                    alt="Title Sponsor Logo"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
-                   Mr. Manjunath Sharanappanavar 
-                </h4>
-                <h1 className="text-base text-blue-600 text-center -mt-0">
-                  Management Information System (MIS)-Executive. 
-                </h1>
-              </div>
               {/* Patron 4 */}
               <div className="flex flex-col items-center gap-y-2">
                 <div className="w-48 h-48">
@@ -526,6 +553,24 @@ export default function HackathonWebsite() {
                   Dean, Reasearch & Development<br/> SGBIT, Belagavi.  
                 </h1>
               </div>
+
+              {/* Patron 3 */}
+              <div className="flex flex-col items-center gap-y-2">
+                <div className="w-48 h-48">
+                  <img
+                    src="/manjunath_s.jpg"
+                    alt="Title Sponsor Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                   Mr. Manjunath Sharanappanavar 
+                </h4>
+                <h1 className="text-base text-blue-600 text-center -mt-0">
+                  Management Information System (MIS)-Executive. 
+                </h1>
+              </div>
+
             </div>
           </div>
           
@@ -841,7 +886,7 @@ export default function HackathonWebsite() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Code className="h-8 w-8 text-[#FF6B35]" />
-                <h3 className="text-2xl font-bold">HackFest 2024</h3>
+                <h3 className="text-2xl font-bold">HackFest 2025</h3>
               </div>
               <p className="text-gray-300">Building the future, one hack at a time.</p>
             </div>
