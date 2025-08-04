@@ -574,7 +574,7 @@ export default function HackathonWebsite() {
               <div className="flex flex-col items-center gap-y-2">
                 <div className="w-48 h-48">
                   <img
-                    src=" "
+                    src="/shailaja_mali.jpg"
                     alt="Shailaja Mali"
                     className="w-full h-full object-contain"
                   />
@@ -601,7 +601,7 @@ export default function HackathonWebsite() {
               <div className="flex flex-col items-center gap-y-2">
                 <div className="w-48 h-48">
                   <img
-                    src=""
+                    src="/suvarna_patil.jpg"
                     alt="Suvarna Patil"
                     className="w-full h-full object-contain"
                   />
