@@ -266,7 +266,6 @@ export default function HackathonWebsite() {
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[#8B4513] mb-6">Amazing Prizes</h2>
-            <p className="text-xl text-[#8B4513]">$50,000 in total prizes and opportunities</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="flex justify-center items-center"></div>
@@ -276,12 +275,9 @@ export default function HackathonWebsite() {
                 <CardTitle className="text-3xl text-[#8B4513]">1st Place</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-4xl font-bold it text-[#FF6B35] mb-4">$20,000</div>
+                <div className="text-4xl font-bold it text-[#FF6B35] mb-4">3,000</div>
                 <ul className="text-[#8B4513] space-y-2">
-                  <li>• Cash Prize</li>
-                  <li>• Mentorship Program</li>
-                  <li>• Startup Incubator Access</li>
-                  <li>• Tech Conference Tickets</li>
+                  <li>• Fixed Cash Prize per Domain</li>
                 </ul>
               </CardContent>
             </Card>     

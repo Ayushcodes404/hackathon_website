@@ -1,11 +1,13 @@
+"use client";
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin, Users, Trophy, Code, Lightbulb } from "lucide-react";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import * as React from "react";
 
-export default function HackathonWebsite() {
+export default function ProblemStatements() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
