@@ -601,7 +601,7 @@ export default function HackathonWebsite() {
               <div className="flex flex-col items-center gap-y-2">
                 <div className="w-48 h-48">
                   <img
-                    src="/suvarna_patil.jpg"
+                    src="/survana_patil.jpg"
                     alt="Suvarna Patil"
                     className="w-full h-full object-contain"
                   />
