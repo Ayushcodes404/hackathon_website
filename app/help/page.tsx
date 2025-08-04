@@ -90,7 +90,7 @@ export default function Help() {
               <Link href="#CHIEF_PATRON" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Team
               </Link>
-              <Link href="#general_rules" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+              <Link href="/#general_rules" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Rules
               </Link>
               <Link href="/wait" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">

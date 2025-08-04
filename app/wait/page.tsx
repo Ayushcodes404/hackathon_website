@@ -33,7 +33,7 @@ export default function WaitPage() {
         <h1 className="text-4xl font-bold mb-4">Problem Statements and Registrations Coming Soon!</h1>
         <p className="text-xl mb-8">
           We’re excited to announce that registrations will open on{" "}
-          <span className="text-blue-600 font-semibold">5th August</span>.
+          <span className="text-blue-600 font-semibold">6th August</span>.
         </p>
 
         {/* Back to Home button wrapped in next/link */}

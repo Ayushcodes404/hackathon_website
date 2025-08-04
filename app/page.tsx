@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin, Users, Trophy, Code, Lightbulb } from "lucide-react"
 import Link from "next/link"
+import { usePathname, useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react"
 import * as React from "react";
 
@@ -278,7 +279,7 @@ export default function HackathonWebsite() {
               <CardTitle className="text-3xl text-[#8B4513]">1st Place</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-4xl font-bold text-[#FF6B35] mb-4">3,000</div>
+              <div className="text-4xl font-bold text-[#FF6B35] mb-4">₹3,000</div>
               <ul className="text-[#8B4513] space-y-2">
                 <li>Domain: Big Data Analytics </li>
               </ul>
@@ -292,7 +293,7 @@ export default function HackathonWebsite() {
               <CardTitle className="text-3xl text-[#8B4513]"> 1st Place</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-4xl font-bold text-[#FF6B35] mb-4">3,000</div>
+              <div className="text-4xl font-bold text-[#FF6B35] mb-4">₹3,000</div>
               <ul className="text-[#8B4513] space-y-2">
                 <li>• Domain: Bio Informatics </li>
               </ul>
@@ -306,7 +307,7 @@ export default function HackathonWebsite() {
               <CardTitle className="text-3xl text-[#8B4513]">1st Place</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-4xl font-bold text-[#FF6B35] mb-4">1,000</div>
+              <div className="text-4xl font-bold text-[#FF6B35] mb-4">₹3,000</div>
               <ul className="text-[#8B4513] space-y-2">
                 <li>• Domain: Cloud Computing</li>
               </ul>
@@ -321,7 +322,7 @@ export default function HackathonWebsite() {
                 <CardTitle className="text-3xl text-[#8B4513]">1st Place</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-4xl font-bold text-[#FF6B35] mb-2">1,000</div>
+                <div className="text-4xl font-bold text-[#FF6B35] mb-2">₹3,000</div>
                 <ul className="text-[#8B4513] space-y-2">
                   <li>• Domain: Internet of Things</li>
                 </ul>
