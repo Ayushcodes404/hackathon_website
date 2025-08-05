@@ -4,7 +4,7 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: ['H-Fest 2025]',
+  title: ['H-Fest 2025'],
 }
 
 export default function RootLayout({
