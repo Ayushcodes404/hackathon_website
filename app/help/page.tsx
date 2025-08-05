@@ -75,7 +75,11 @@ export default function Help() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Code className="h-8 w-8 text-[#FF6B35]" />
-              <h1 className="text-2xl font-bold text-[#8B4513]"><button>HackFest 2025</button></h1>
+              <h1 className="text-2xl font-bold text-[#8B4513]">
+                <Link href="/" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+                  Hack Fest 2025
+                </Link>
+              </h1>
             </div>
             <nav className="hidden md:flex items-center space-x-6">
               <Link href="/#about" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
@@ -96,10 +100,10 @@ export default function Help() {
               <Link href="/problem_statements" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Problem Statements
               </Link>
-              <Link href="/wait" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+              <Link href="/help" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Help
               </Link>
-              <Link href="/wait">
+              <Link href="https://forms.gle/N9wPdDkYvD7FaPBq9">
                 <button className="bg-[#FF6B35] text-white px-6 py-2 font-semibold rounded shadow hover:bg-[#e65a28] transition">
                   Register Now
                 </button>

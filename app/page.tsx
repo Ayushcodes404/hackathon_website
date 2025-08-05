@@ -136,7 +136,7 @@ export default function HackathonWebsite() {
               <Link href="/help" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Help
               </Link>
-              <Link href="/wait">
+              <Link href="https://forms.gle/N9wPdDkYvD7FaPBq9">
                 <button className="sketchy-btn bg-[#FF6B35] text-white px-6 py-2 font-semibold">
                   Register Now
                 </button>
@@ -167,7 +167,7 @@ export default function HackathonWebsite() {
               Turn your wildest ideas into reality.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Link href="/wait">
+              <Link href="https://forms.gle/N9wPdDkYvD7FaPBq9">
                 <button className="sketchy-btn bg-[#FF6B35] text-white px-8 py-4 text-xl font-semibold">
                     Register Now
                   </button>
