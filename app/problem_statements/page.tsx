@@ -79,6 +79,13 @@ const problems = [
     category: 'Internet_of_Things'
   },
 
+  {
+    id: 'IOT-011',
+    title: 'Open Innovation',
+    description:'Participants may select any topic of their choice related to the domain of Internet of Things(IT).',
+    category: 'Internet_of_Things',  
+  },
+
   // Big Data Analytics Problems (BDA-001 to BDA-010)
   {
     id: 'BDA-001',
@@ -130,6 +137,13 @@ const problems = [
     title: 'AirSense: Urban Air Quality Predictor',
     description: 'Aggregate data from air quality sensors, satellite feeds, and traffic to predict AQI levels and suggest interventions for better air quality management.',
     category: 'Big Data Analytics'  },
+  
+  {
+    id: 'BDA-011',
+    title: 'Open Innovation',
+    description:'Participants may select any topic of their choice related to the domain of Big Data Analytics (BDA).',
+    category: 'Internet_of_Things',  
+  },
 
   // Bioinformatics Problems (BIO-001 to BIO-010)
   {
@@ -192,6 +206,13 @@ const problems = [
     description: 'Design an AI-based system that integrates face mask detection with real-time temperature monitoring. The solution should utilize computer vision to ensure mask compliance and trigger alerts when elevated body temperatures are detected, supporting public health and safety in crowded or sensitive environments.',
     category: 'Bioinformatics'
   },
+  
+  {
+    id: 'BIO-011',
+    title: 'Open Innovation',
+    description:'Participants may select any topic of their choice related to the domain of Bioinformatics (BIO).',
+    category: 'Internet_of_Things',  
+  },
 
   // Cloud Computing Problems (CLO-001 to CLO-010)
   {
@@ -244,6 +265,13 @@ const problems = [
     title: 'LegalEase: AI-Powered Contract Summarizer for Startups & Freelancers',
     description: 'Build a SaaS tool that uses AI to analyze and summarize legal documents in plain English, highlight risky clauses, and suggest edits for better contract management.',
     category: 'Cloud Computing'},
+  
+  {
+    id: 'BIO-011',
+    title: 'Open Innovation',
+    description:'Participants may select any topic of their choice related to the domain of Bioinformatics (BIO).',
+    category: 'Internet_of_Things',  
+  },
 
    // Cloud Computing Problems (CLO-001 to CLO-010)
 ];
