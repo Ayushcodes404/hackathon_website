@@ -153,7 +153,7 @@ export default function HackathonWebsite() {
               Turn your wildest ideas into reality.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Link href="/https://forms.gle/N9wPdDkYvD7FaPBq9">
+              <Link href="https://forms.gle/N9wPdDkYvD7FaPBq9">
                 <button className="sketchy-btn bg-[#FF6B35] text-white px-8 py-4 text-xl font-semibold">
                     Register Now
                   </button>
