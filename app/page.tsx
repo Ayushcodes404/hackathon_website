@@ -868,7 +868,7 @@ export default function HackathonWebsite() {
             collaboration.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/wait">
+            <Link href="/https://forms.gle/N9wPdDkYvD7FaPBq9">
             <button className="sketchy-btn bg-white text-[#FF6B35] px-8 py-4 text-xl font-semibold">
               Register Now 
             </button>
