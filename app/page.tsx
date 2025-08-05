@@ -2,10 +2,9 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { useState, useEffect } from "react";
 import { Calendar, MapPin, Users, Trophy, Code, Lightbulb } from "lucide-react"
 import Link from "next/link"
-import { usePathname, useSearchParams } from "next/navigation";
-import { useState, useEffect } from "react"
 import * as React from "react";
 
 export default function HackathonWebsite() {
@@ -18,19 +17,6 @@ export default function HackathonWebsite() {
   
     return () => clearTimeout(timer)
   }, [])
-  
-  // 2. Scroll logic after loading
-  useEffect(() => {
-    const hash = window.location.hash
-    if (hash) {
-      const element = document.querySelector(hash)
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' })
-      }
-    }
-  }, [usePathname(), useSearchParams()])
-
-  
 
   if (isLoading) {
     return (
