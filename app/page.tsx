@@ -12,13 +12,25 @@ export default function HackathonWebsite() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    // Simulate loading time
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 3000) // 3 seconds loading time
-
+    }, 3000)
+  
     return () => clearTimeout(timer)
   }, [])
+  
+  // 2. Scroll logic after loading
+  useEffect(() => {
+    const hash = window.location.hash
+    if (hash) {
+      const element = document.querySelector(hash)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }, [usePathname(), useSearchParams()])
+
+  
 
   if (isLoading) {
     return (
@@ -96,7 +108,11 @@ export default function HackathonWebsite() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Code className="h-8 w-8 text-[#FF6B35]" />
-              <h1 className="text-2xl font-bold text-[#8B4513]">HackFest 2025</h1>
+              <h1 className="text-2xl font-bold text-[#8B4513]">
+              <Link href="/" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+                Hack Fest 2025
+              </Link>
+              </h1>
             </div>
             <nav className="hidden md:flex items-center space-x-6">
               <Link href="#about" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
@@ -114,7 +130,7 @@ export default function HackathonWebsite() {
               <Link href="#general_rules" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Rules
               </Link>
-              <Link href="/wait" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+              <Link href="/problem_statements" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Problem Statements
               </Link>
               <Link href="/help" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">

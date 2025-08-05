@@ -39,13 +39,13 @@ const problems = [
   {
     id: 'IOT-004',
     title: 'Wildlife Tracking and Poaching Prevention',
-    description: 'Develop a unique solution for wildlife tracking and poaching prevention. Use appropriate public APIs (e.g., Google APIs, open datasets), integrate cloud tools like Firebase, GCP, or sensor interfaces for impact-driven applications.',
+    description: 'Design an IoT-based water quality monitoring solution for remote areas using real-time sensors (pH, turbidity, temperature) and cloud storage (e.g., Firebase, AWS IoT Core). Integrate open water quality datasets and APIs for comparative analysis and alert generation.',
     category: 'Internet_of_Things'
   },
   {
     id: 'IOT-005',
-    title: 'Cold Chain Monitoring for Vaccine Transport',
-    description: 'Develop a unique solution for cold chain monitoring for vaccine transport. Use appropriate public APIs (e.g., Google APIs, open datasets), integrate cloud tools like Firebase, GCP, or sensor interfaces for impact-driven applications.',
+    title: 'Smart Water Quality Monitoring System',
+    description: 'Design an IoT-based water quality monitoring solution for remote areas using real-time sensors (pH, turbidity, temperature) and cloud storage (e.g., Firebase, AWS IoT Core). Integrate open water quality datasets and APIs for comparative analysis and alert generation.',
     category: 'Internet_of_Things'
   },
   {
@@ -243,7 +243,9 @@ const problems = [
     id: 'CLO-010',
     title: 'LegalEase: AI-Powered Contract Summarizer for Startups & Freelancers',
     description: 'Build a SaaS tool that uses AI to analyze and summarize legal documents in plain English, highlight risky clauses, and suggest edits for better contract management.',
-   category: 'Cloud Computing'  }
+    category: 'Cloud Computing'},
+
+   // Cloud Computing Problems (CLO-001 to CLO-010)
 ];
 
 export default function HackathonWebsite() {
@@ -321,11 +323,11 @@ export default function HackathonWebsite() {
               <h1 className="text-2xl font-bold text-[#8B4513]">HackFest 2025</h1>
             </div>
             <nav className="hidden md:flex items-center space-x-6">
-              <Link href="#about" className="text-[#8B4513] hover:text-[#FF6B35]">About</Link>
-              <Link href="#schedule" className="text-[#8B4513] hover:text-[#FF6B35]">Schedule</Link>
-              <Link href="#prizes" className="text-[#8B4513] hover:text-[#FF6B35]">Prizes</Link>
-              <Link href="#CHIEF_PATRON" className="text-[#8B4513] hover:text-[#FF6B35]">Team</Link>
-              <Link href="#general_rules" className="text-[#8B4513] hover:text-[#FF6B35]">Rules</Link>
+              <Link href="/#about" className="text-[#8B4513] hover:text-[#FF6B35]">About</Link>
+              <Link href="/#schedule" className="text-[#8B4513] hover:text-[#FF6B35]">Schedule</Link>
+              <Link href="/#prizes" className="text-[#8B4513] hover:text-[#FF6B35]">Prizes</Link>
+              <Link href="/#CHIEF_PATRON" className="text-[#8B4513] hover:text-[#FF6B35]">Team</Link>
+              <Link href="/#general_rules" className="text-[#8B4513] hover:text-[#FF6B35]">Rules</Link>
               <Link href="/problem_statements" className="text-[#8B4513] hover:text-[#FF6B35]">Problem Statements</Link>
               <Link href="/help" className="text-[#8B4513] hover:text-[#FF6B35]">Help</Link>
               <Link href="/wait">

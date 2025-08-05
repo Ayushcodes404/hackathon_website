@@ -75,25 +75,25 @@ export default function Help() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Code className="h-8 w-8 text-[#FF6B35]" />
-              <h1 className="text-2xl font-bold text-[#8B4513]">HackFest 2025</h1>
+              <h1 className="text-2xl font-bold text-[#8B4513]"><button>HackFest 2025</button></h1>
             </div>
             <nav className="hidden md:flex items-center space-x-6">
-              <Link href="#about" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+              <Link href="/#about" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 About
               </Link>
-              <Link href="#schedule" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+              <Link href="/#schedule" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Schedule
               </Link>
-              <Link href="#prizes" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+              <Link href="/#prizes" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Prizes
               </Link>
-              <Link href="#CHIEF_PATRON" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+              <Link href="/#CHIEF_PATRON" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Team
               </Link>
               <Link href="/#general_rules" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Rules
               </Link>
-              <Link href="/wait" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+              <Link href="/problem_statements" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 Problem Statements
               </Link>
               <Link href="/wait" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
