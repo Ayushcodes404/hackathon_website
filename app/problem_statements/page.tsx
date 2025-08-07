@@ -267,7 +267,7 @@ const problems = [
     category: 'Cloud Computing'},
   
   {
-    id: 'BIO-011',
+    id: 'CLO-011',
     title: 'Open Innovation',
     description:'Participants may select any topic of their choice related to the domain of Bioinformatics (BIO).',
     category: 'Internet_of_Things',  
