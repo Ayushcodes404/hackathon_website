@@ -131,11 +131,8 @@ export default function HackathonWebsite() {
           </div>
         </div>
       </header>
-
       {/* Hero Section */}
       <section className="min-h-screen flex items-center px-4 relative overflow-hidden">
-        
-
         {/* Left side illustration */}
         <div className="absolute top-1/2 left-0 -translate-y-1/2 hidden lg:block">
           <img src="/hero_left.png" alt="Hero Left Illustration" className="opacity-100 rotate-0" />
