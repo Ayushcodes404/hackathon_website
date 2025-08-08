@@ -806,7 +806,7 @@ export default function HackathonWebsite() {
             </div>
             <div className="flex items-start ">
               <span className="mr-2">•</span>
-              <span>The decision of the <strong>Judges and Organizing Committee</strong> will be final and binding.</span>
+              <span>The decision of the Judges and Organizing Committee will be final and binding.</span>
             </div>
             <div className="flex items-start">
               <span className="mr-2">•</span>
