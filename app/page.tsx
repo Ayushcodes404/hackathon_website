@@ -814,7 +814,7 @@ export default function HackathonWebsite() {
             </div>
             <div className="flex items-start">
               <span className="mr-2">•</span>
-              <span>Each team must include at least one female member. Teams can have up to 3 members, with a ₹500 registration fee.</span>
+              <span>Teams can have up to 3 members, with a ₹500 registration fee.</span>
             </div>
             <div className="flex items-start">
               <span className="mr-2">•</span>
@@ -936,7 +936,7 @@ export default function HackathonWebsite() {
             </div>
           </div>
           <div className="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300">
-            <p>&copy; 2024 HackFest. All rights reserved.</p>
+            <p>&copy; 2025 HackFest. All rights reserved.</p>
           </div>
         </div>
       </footer>
