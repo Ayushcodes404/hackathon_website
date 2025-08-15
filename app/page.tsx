@@ -410,17 +410,17 @@ export default function HackathonWebsite() {
           {/* Swamiji */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-[#8B4513] text-center mb-8">"With the divine blessings of Swamiji, we dedicate HackFest to nurturing innovation with values and vision."</h3>
-            <div className="flex justify-center gap-x-8">
+            <div className="flex justify-center gap-x-8 flex-wrap">
               {/* Card 1 */}
-              <div className="flex flex-col items-center gap-y-4">
-                <div className="w-48 h-48">
+              <div className="flex flex-col items-center gap-y-4 mb-8">
+                <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                   <img
                     src="/shivabasava_mahaswamiji.jpg"
                     alt="Title Sponsor Logo"
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <h4 className="text-2xl text-[#FF6B35] text-center mb-0">
+                <h4 className="text-xl md:text-2xl text-[#FF6B35] text-center mb-0">
                   Shivabasava Mahaswamiji
                 </h4>
               </div>
@@ -430,17 +430,17 @@ export default function HackathonWebsite() {
           {/* Patrons*/}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">CHIEF PATRONS</h3>
-            <div className="flex justify-center gap-x-14 flex-wrap">
+            <div className="flex justify-center gap-x-8 flex-wrap">
               {/* Card 1 */}
               <div className="flex flex-col items-center gap-y-2 mb-8">
-                <div className="w-48 h-48">
+                <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                   <img
                     src="/siddarama_swamiji.jpg"
                     alt="Title Sponsor Logo"
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <h4 className="text-2xl text-[#FF6B35] text-center mb-0">
+                <h4 className="text-xl md:text-2xl text-[#FF6B35] text-center mb-0">
                   Dr. Tontada Siddharama Mahaswamiji
                 </h4>
                 <h1 className="text-base text-blue-600 text-center -mt-0">
@@ -450,14 +450,14 @@ export default function HackathonWebsite() {
 
               {/* Card 2 */}
               <div className="flex flex-col items-center gap-y-2 mb-8">
-                <div className="w-48 h-48">
+                <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                   <img
                     src="/alamprabhu_maha_swamiji.jpg"
                     alt="Title Sponsor Logo"
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <h4 className="text-2xl text-[#FF6B35] text-center mb-0">
+                <h4 className="text-xl md:text-2xl text-[#FF6B35] text-center mb-0">
                   Dr. Allamaprabhu Mahaswamiji
                 </h4>
                 <h1 className="text-base text-blue-600 text-center -mt-0">
@@ -483,91 +483,91 @@ export default function HackathonWebsite() {
 
             <div className="flex flex-col items-center">
               {/* Patrons Row 1 */}
-              <div className="flex justify-center gap-x-12 flex-wrap">
+              <div className="flex justify-center gap-8 flex-wrap">
                 {/* Patron 1 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/Mahadeva_Prasanna.jpeg"
                       alt="Title Sponsor Logo"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center">
                     Prof. S. R. Mahadeva Prasanna
                   </h4>
-                  <h1 className="text-base text-blue-600 text-center">
+                  <h1 className="text-sm sm:text-base text-blue-600 text-center">
                     Director,<br />IIIT Dharwad.
                   </h1>
                 </div>
 
                 {/* Patron 2 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/Rahul-Sharanappa-Sankanur.jpg"
                       alt="Title Sponsor Logo"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center">
                     Shri Rahul Sharanappa Sankanur
                   </h4>
-                  <h1 className="text-base text-blue-600 text-center">
+                  <h1 className="text-sm sm:text-base text-blue-600 text-center">
                     Managing Director, <br />KITS, Govt of Karnataka.
                   </h1>
                 </div>
 
                 {/* Patron 3 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/Nithin__Chakki.jpg"
                       alt="Title Sponsor Logo"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center">
                     Mr. Nithin Chakki
                   </h4>
-                  <h1 className="text-base text-blue-600 text-center">
+                  <h1 className="text-sm sm:text-base text-blue-600 text-center">
                     General Manager,<br />KITS, Govt of Karnataka.
                   </h1>
                 </div>
               </div>
 
               {/* Patrons Row 2 */}
-              <div className="flex justify-center gap-x-12 mt-12 flex-wrap">
+              <div className="flex justify-center gap-8 mt-12 flex-wrap">
                 {/* Patron 4 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/F V Manvi.jpg"
                       alt="Title Sponsor Logo"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center">
                     Dr. F. V. Manvi
                   </h4>
-                  <h1 className="text-base text-blue-600 text-center">
+                  <h1 className="text-sm sm:text-base text-blue-600 text-center">
                     Chairman, Governing Council,<br />SGBIT, Belagavi
                   </h1>
                 </div>
 
                 {/* Patron 5 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/B R Patagundi.jpg"
                       alt="Title Sponsor Logo"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center">
                     Dr. B. R. Patagundi
                   </h4>
-                  <h1 className="text-base text-blue-600 text-center">
+                  <h1 className="text-sm sm:text-base text-blue-600 text-center">
                     Principal,<br />SGBIT, Belagavi.
                   </h1>
                 </div>
@@ -577,69 +577,69 @@ export default function HackathonWebsite() {
             {/* Faculty Co-ordinators */}
             <div className="mb-16 mt-12">
               <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">Faculty Co-ordinators</h3>
-              <div className="flex justify-center gap-x-12 flex-wrap">
+              <div className="flex justify-center gap-8 flex-wrap">
                 {/* Patron 1 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/prashant_bhagwati.jpg"
                       alt="Title Sponsor Logo"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center mb-0">
                     Dr. Prashant Bhagawati
                   </h4>
-                  <h1 className="text-base text-blue-600 text-center -mt-0">
+                  <h1 className="text-sm sm:text-base text-blue-600 text-center -mt-0">
                     District Innovation Associate (DIA).
                   </h1>
                 </div>
                 {/* Patron 2 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/sanjeev.jpg"
                       alt="Title Sponsor Logo"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center mb-0">
                     Dr. Sanjeev Kulkarni
                   </h4>
-                  <h1 className="text-base text-blue-600 text-center -mt-0">
+                  <h1 className="text-sm sm:text-base text-blue-600 text-center -mt-0">
                     NAIN 2.0 Coordinator.
                   </h1>
                 </div>
                 {/* Patron 4 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/suresh_a.jpeg"
                       alt="Title Sponsor Logo"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center mb-0">
                     Dr. Suresh Akkole
                   </h4>
-                  <h1 className="text-base text-blue-600 text-center -mt-0">
+                  <h1 className="text-sm sm:text-base text-blue-600 text-center -mt-0">
                     Dean, Reasearch & Development<br /> SGBIT, Belagavi.
                   </h1>
                 </div>
 
                 {/* Patron 3 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/manjunath_s.jpg"
                       alt="Title Sponsor Logo"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center mb-0">
                     Mr. Manjunath Sharanappanavar
                   </h4>
-                  <h1 className="text-base text-blue-600 text-center -mt-0">
+                  <h1 className="text-sm sm:text-base text-blue-600 text-center -mt-0">
                     Management Information System (MIS)-Executive.
                   </h1>
                 </div>
@@ -650,37 +650,37 @@ export default function HackathonWebsite() {
             {/*Conveyners*/}
             <div className="mb-16">
               <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">CONVENERS</h3>
-              <div className="flex justify-center gap-x-12 flex-wrap">
+              <div className="flex justify-center gap-8 flex-wrap">
                 {/* Patron 1 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/cs_hod.jpg"
                       alt="Title Sponsor Logo"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center mb-0">
                     Dr. B. S. Halakarnimath
                   </h4>
-                  <h1 className="text-base text-blue-600 text-center -mt-0">
+                  <h1 className="text-sm sm:text-base text-blue-600 text-center -mt-0">
                     Professor & HOD ,CSE <br /> SGBIT, Belagavi.
                   </h1>
                 </div>
 
                 {/* Patron 2 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/Ashok_H.jpeg"
                       alt="Title Sponsor Logo"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center mb-0">
                     Dr. Ashok M. Hulagabali
                   </h4>
-                  <h1 className="text-base text-blue-600 text-center -mt-0">
+                  <h1 className="text-sm sm:text-base text-blue-600 text-center -mt-0">
                     Dean Academics <br /> SGBIT, Belagavi.
                   </h1>
                 </div>
@@ -690,58 +690,58 @@ export default function HackathonWebsite() {
             {/* CO-CONVENERS */}
             <div className="mb-16">
               <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">CO-CONVENERS</h3>
-              <div className="flex justify-center gap-x-12 flex-wrap">
+              <div className="flex justify-center gap-8 flex-wrap">
                 {/* Patron 1 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/shailaja_mali.jpg"
                       alt="Shailaja Mali"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center mb-0">
                     Dr. Shailaja Mali
                   </h4>
                 </div>
                 {/* Patron 2 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/rajeshwari_k.jpeg"
                       alt="Title Sponsor Logo"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center mb-0">
                     Prof. Rajeshwari Kisan
                   </h4>
 
                 </div>
                 {/* Patron 3 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/survana_patil.jpg"
                       alt="Suvarna Patil"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center mb-0">
                     Prof. Suvarna Patil
                   </h4>
 
                 </div>
                 {/* Patron 4 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/ks.jpeg"
                       alt="Title Sponsor Logo"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center mb-0">
                     Prof. Kshitij Sheth
                   </h4>
                 </div>
@@ -751,44 +751,44 @@ export default function HackathonWebsite() {
             {/* Student Co-odrinators */}
             <div className="mb-16">
               <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">Student Co-ordinators</h3>
-              <div className="flex justify-center gap-x-12 flex-wrap">
+              <div className="flex justify-center gap-8 flex-wrap">
                 {/* Student 1 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/shubham_H.jpeg "
                       alt="Shubham"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center mb-0">
                     Shubham Hiremath
                   </h4>
                 </div>
                 {/* Student 2 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/Suyog H.jpeg "
                       alt="Shubham"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center mb-0">
                     Suyog Hanamar
                   </h4>
                 </div>
 
                 {/* Student 3 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/Chirag_K.jpeg "
                       alt="Shubham"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center mb-0">
                     Chirag Kamble
                   </h4>
                 </div>
@@ -797,17 +797,17 @@ export default function HackathonWebsite() {
 
             <div className="mb-16">
               <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">Website & Technology Lead</h3>
-              <div className="flex justify-center gap-x-12 flex-wrap">
+              <div className="flex justify-center gap-8 flex-wrap">
                 {/* Student 1 */}
                 <div className="flex flex-col items-center gap-y-2 mb-8">
-                  <div className="w-48 h-48">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
                       src="/ayush_me.jpeg "
                       alt="Ayush"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h4 className="text-1xl text-[#FF6B35] text-center mb-0">
+                  <h4 className="text-base sm:text-xl text-[#FF6B35] text-center mb-0">
                     Ayush K Tammannavar
                   </h4>
                 </div>
@@ -834,16 +834,16 @@ export default function HackathonWebsite() {
                         <React.Fragment key={crypto.randomUUID()}>
                           <div className="overflow-x-auto">
                             <div className="flex flex-nowrap gap-8 px-4 py-4">
-                              <div className="h-45 w-55 flex items-center justify-center">
-                                <img src="/Startup Karnataka1.png" alt="Logo 1" className="h-full w-auto object-contain opacity-80" />
+                              <div className="h-24 w-32 md:h-32 md:w-40 flex items-center justify-center">
+                                <img src="/Startup Karnataka.png" alt="Logo 1" className="h-full w-auto object-contain opacity-80" />
                               </div>
-                              <div className="h-45 w-55 flex items-center justify-center">
+                              <div className="h-24 w-32 md:h-32 md:w-40 flex items-center justify-center">
                                 <img src="/new_age_incubation_network_nain_center_nmamit_logo.jpeg" alt="Logo 2" className="h-full w-auto object-contain opacity-80" />
                               </div>
-                              <div className="h-45 w-55 flex items-center justify-center">
+                              <div className="h-24 w-32 md:h-32 md:w-40 flex items-center justify-center">
                                 <img src="/K Tech.jpeg" alt="Logo 3" className="h-full w-auto object-contain opacity-80" />
                               </div>
-                              <div className="h-45 w-55 flex items-center justify-center">
+                              <div className="h-24 w-32 md:h-32 md:w-40 flex items-center justify-center">
                                 <img src="/IIITD.jpg" alt="Logo 4" className="h-full w-auto object-contain opacity-80" />
                               </div>
                             </div>
