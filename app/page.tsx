@@ -3,13 +3,14 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { useState, useEffect } from "react";
-import { Calendar, MapPin, Users, Trophy, Code, Lightbulb, X, Gift } from "lucide-react"
+import { Calendar, MapPin, Users, Trophy, Code, Lightbulb, X, Gift, Menu } from "lucide-react"
 import Link from "next/link"
 import * as React from "react";
 
 export default function HackathonWebsite() {
   const [isLoading, setIsLoading] = useState(true)
   const [showBonusPopup, setShowBonusPopup] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -22,6 +23,14 @@ export default function HackathonWebsite() {
 
     return () => clearTimeout(timer)
   }, [])
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   if (isLoading) {
     return (
@@ -162,7 +171,7 @@ export default function HackathonWebsite() {
 
       {/* Header */}
       <header className="border-b-2 border-[#8B4513] bg-[#F5F5DC] sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-4 relative">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Code className="h-8 w-8 text-[#FF6B35]" />
@@ -172,6 +181,7 @@ export default function HackathonWebsite() {
                 </Link>
               </h1>
             </div>
+            {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-6">
               <Link href="#about" className="text-[#8B4513] hover:text-[#FF6B35] transition-colors">
                 About
@@ -200,7 +210,42 @@ export default function HackathonWebsite() {
                 </button>
               </Link>
             </nav>
+            {/* Mobile Menu Button */}
+            <button onClick={toggleMobileMenu} className="md:hidden text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+              <Menu className="h-8 w-8" />
+            </button>
           </div>
+          {/* Mobile Navigation Menu */}
+          {isMobileMenuOpen && (
+            <nav className="absolute top-full left-0 right-0 bg-white border-b-2 border-[#8B4513] shadow-md flex flex-col items-center space-y-4 py-4 md:hidden">
+              <Link href="#about" onClick={closeMobileMenu} className="w-full text-center text-lg text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+                About
+              </Link>
+              <Link href="#schedule" onClick={closeMobileMenu} className="w-full text-center text-lg text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+                Schedule
+              </Link>
+              <Link href="#prizes" onClick={closeMobileMenu} className="w-full text-center text-lg text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+                Prizes
+              </Link>
+              <Link href="#CHIEF_PATRON" onClick={closeMobileMenu} className="w-full text-center text-lg text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+                Team
+              </Link>
+              <Link href="#general_rules" onClick={closeMobileMenu} className="w-full text-center text-lg text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+                Rules
+              </Link>
+              <Link href="/problem_statements" onClick={closeMobileMenu} className="w-full text-center text-lg text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+                Problem Statements
+              </Link>
+              <Link href="/help" onClick={closeMobileMenu} className="w-full text-center text-lg text-[#8B4513] hover:text-[#FF6B35] transition-colors">
+                Help
+              </Link>
+              <Link href="https://forms.gle/N9wPdDkYvD7FaPBq9" onClick={closeMobileMenu} className="w-full">
+                <button className="w-3/4 mx-auto sketchy-btn bg-[#FF6B35] text-white px-6 py-2 font-semibold">
+                  Register Now
+                </button>
+              </Link>
+            </nav>
+          )}
         </div>
       </header>
       {/* Hero Section */}
@@ -965,22 +1010,22 @@ export default function HackathonWebsite() {
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#about" className="text-gray-300 hover:text-[#FF6B35]">
+                  <Link href="#about" onClick={closeMobileMenu} className="text-gray-300 hover:text-[#FF6B35]">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link href="#schedule" className="text-gray-300 hover:text-[#FF6B35]">
+                  <Link href="#schedule" onClick={closeMobileMenu} className="text-gray-300 hover:text-[#FF6B35]">
                     Schedule
                   </Link>
                 </li>
                 <li>
-                  <Link href="#prizes" className="text-gray-300 hover:text-[#FF6B35]">
+                  <Link href="#prizes" onClick={closeMobileMenu} className="text-gray-300 hover:text-[#FF6B35]">
                     Prizes
                   </Link>
                 </li>
                 <li>
-                  <Link href="#CHIEF_PATRON" className="text-gray-300 hover:text-[#FF6B35]">
+                  <Link href="#CHIEF_PATRON" onClick={closeMobileMenu} className="text-gray-300 hover:text-[#FF6B35]">
                     Team
                   </Link>
                 </li>
