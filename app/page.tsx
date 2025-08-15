@@ -128,7 +128,7 @@ export default function HackathonWebsite() {
                   Great News!
                 </p>
                 <p className="text-lg text-[#8B4513]">
-                  We have extended the registration deadline till <span className="font-bold text-[#FF6B35]">August 16th</span> as our Independence Day gift to you!
+                  We have extended the registration deadline as our Independence Day gift to you!
                 </p>
                 <p className="text-base text-gray-600">
                   Don't miss this opportunity to be part of HackFest 2025! 🇮🇳
