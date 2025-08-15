@@ -430,9 +430,9 @@ export default function HackathonWebsite() {
           {/* Patrons*/}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">CHIEF PATRONS</h3>
-            <div className="flex justify-center gap-x-14">
+            <div className="flex justify-center gap-x-14 flex-wrap">
               {/* Card 1 */}
-              <div className="flex flex-col items-center gap-y-2">
+              <div className="flex flex-col items-center gap-y-2 mb-8">
                 <div className="w-48 h-48">
                   <img
                     src="/siddarama_swamiji.jpg"
@@ -449,7 +449,7 @@ export default function HackathonWebsite() {
               </div>
 
               {/* Card 2 */}
-              <div className="flex flex-col items-center gap-y-2">
+              <div className="flex flex-col items-center gap-y-2 mb-8">
                 <div className="w-48 h-48">
                   <img
                     src="/alamprabhu_maha_swamiji.jpg"
@@ -483,9 +483,9 @@ export default function HackathonWebsite() {
 
             <div className="flex flex-col items-center">
               {/* Patrons Row 1 */}
-              <div className="flex justify-center gap-x-12">
+              <div className="flex justify-center gap-x-12 flex-wrap">
                 {/* Patron 1 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/Mahadeva_Prasanna.jpeg"
@@ -502,7 +502,7 @@ export default function HackathonWebsite() {
                 </div>
 
                 {/* Patron 2 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/Rahul-Sharanappa-Sankanur.jpg"
@@ -519,7 +519,7 @@ export default function HackathonWebsite() {
                 </div>
 
                 {/* Patron 3 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/Nithin__Chakki.jpg"
@@ -537,9 +537,9 @@ export default function HackathonWebsite() {
               </div>
 
               {/* Patrons Row 2 */}
-              <div className="flex justify-center gap-x-12 mt-12">
+              <div className="flex justify-center gap-x-12 mt-12 flex-wrap">
                 {/* Patron 4 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/F V Manvi.jpg"
@@ -556,7 +556,7 @@ export default function HackathonWebsite() {
                 </div>
 
                 {/* Patron 5 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/B R Patagundi.jpg"
@@ -579,7 +579,7 @@ export default function HackathonWebsite() {
               <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">Faculty Co-ordinators</h3>
               <div className="flex justify-center gap-x-12 flex-wrap">
                 {/* Patron 1 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/prashant_bhagwati.jpg"
@@ -595,7 +595,7 @@ export default function HackathonWebsite() {
                   </h1>
                 </div>
                 {/* Patron 2 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/sanjeev.jpg"
@@ -611,7 +611,7 @@ export default function HackathonWebsite() {
                   </h1>
                 </div>
                 {/* Patron 4 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/suresh_a.jpeg"
@@ -628,7 +628,7 @@ export default function HackathonWebsite() {
                 </div>
 
                 {/* Patron 3 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/manjunath_s.jpg"
@@ -650,9 +650,9 @@ export default function HackathonWebsite() {
             {/*Conveyners*/}
             <div className="mb-16">
               <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">CONVENERS</h3>
-              <div className="flex justify-center gap-x-12">
+              <div className="flex justify-center gap-x-12 flex-wrap">
                 {/* Patron 1 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/cs_hod.jpg"
@@ -669,7 +669,7 @@ export default function HackathonWebsite() {
                 </div>
 
                 {/* Patron 2 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/Ashok_H.jpeg"
@@ -692,7 +692,7 @@ export default function HackathonWebsite() {
               <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">CO-CONVENERS</h3>
               <div className="flex justify-center gap-x-12 flex-wrap">
                 {/* Patron 1 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/shailaja_mali.jpg"
@@ -705,7 +705,7 @@ export default function HackathonWebsite() {
                   </h4>
                 </div>
                 {/* Patron 2 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/rajeshwari_k.jpeg"
@@ -719,7 +719,7 @@ export default function HackathonWebsite() {
 
                 </div>
                 {/* Patron 3 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/survana_patil.jpg"
@@ -733,7 +733,7 @@ export default function HackathonWebsite() {
 
                 </div>
                 {/* Patron 4 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/ks.jpeg"
@@ -751,9 +751,9 @@ export default function HackathonWebsite() {
             {/* Student Co-odrinators */}
             <div className="mb-16">
               <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">Student Co-ordinators</h3>
-              <div className="flex justify-center gap-x-12">
+              <div className="flex justify-center gap-x-12 flex-wrap">
                 {/* Student 1 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/shubham_H.jpeg "
@@ -766,7 +766,7 @@ export default function HackathonWebsite() {
                   </h4>
                 </div>
                 {/* Student 2 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/Suyog H.jpeg "
@@ -780,7 +780,7 @@ export default function HackathonWebsite() {
                 </div>
 
                 {/* Student 3 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/Chirag_K.jpeg "
@@ -797,9 +797,9 @@ export default function HackathonWebsite() {
 
             <div className="mb-16">
               <h3 className="text-2xl font-bold text-[#FF6B35] text-center mb-8">Website & Technology Lead</h3>
-              <div className="flex justify-center gap-x-12">
+              <div className="flex justify-center gap-x-12 flex-wrap">
                 {/* Student 1 */}
-                <div className="flex flex-col items-center gap-y-2">
+                <div className="flex flex-col items-center gap-y-2 mb-8">
                   <div className="w-48 h-48">
                     <img
                       src="/ayush_me.jpeg "
@@ -831,7 +831,7 @@ export default function HackathonWebsite() {
                   <div className="overflow-hidden py-8 bg-white">
                     <div className="whitespace-nowrap animate-scroll flex">
                       {[...Array(2)].flatMap(() => (
-                        <>
+                        <React.Fragment key={crypto.randomUUID()}>
                           <div className="overflow-x-auto">
                             <div className="flex flex-nowrap gap-8 px-4 py-4">
                               <div className="h-32 w-40 flex items-center justify-center">
@@ -848,7 +848,7 @@ export default function HackathonWebsite() {
                               </div>
                             </div>
                           </div>
-                        </>
+                        </React.Fragment>
                       ))}
                     </div>
                   </div>
