@@ -834,16 +834,16 @@ export default function HackathonWebsite() {
                         <React.Fragment key={crypto.randomUUID()}>
                           <div className="overflow-x-auto">
                             <div className="flex flex-nowrap gap-8 px-4 py-4">
-                              <div className="h-32 w-40 flex items-center justify-center">
-                                <img src="/Startup Karnataka.png" alt="Logo 1" className="h-full w-auto object-contain opacity-80" />
+                              <div className="h-45 w-55 flex items-center justify-center">
+                                <img src="/Startup Karnataka1.png" alt="Logo 1" className="h-full w-auto object-contain opacity-80" />
                               </div>
-                              <div className="h-32 w-40 flex items-center justify-center">
+                              <div className="h-45 w-55 flex items-center justify-center">
                                 <img src="/new_age_incubation_network_nain_center_nmamit_logo.jpeg" alt="Logo 2" className="h-full w-auto object-contain opacity-80" />
                               </div>
-                              <div className="h-32 w-40 flex items-center justify-center">
+                              <div className="h-45 w-55 flex items-center justify-center">
                                 <img src="/K Tech.jpeg" alt="Logo 3" className="h-full w-auto object-contain opacity-80" />
                               </div>
-                              <div className="h-32 w-40 flex items-center justify-center">
+                              <div className="h-45 w-55 flex items-center justify-center">
                                 <img src="/IIITD.jpg" alt="Logo 4" className="h-full w-auto object-contain opacity-80" />
                               </div>
                             </div>
