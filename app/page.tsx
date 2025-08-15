@@ -3,16 +3,21 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { useState, useEffect } from "react";
-import { Calendar, MapPin, Users, Trophy, Code, Lightbulb } from "lucide-react"
+import { Calendar, MapPin, Users, Trophy, Code, Lightbulb, X, Gift } from "lucide-react"
 import Link from "next/link"
 import * as React from "react";
 
 export default function HackathonWebsite() {
   const [isLoading, setIsLoading] = useState(true)
+  const [showBonusPopup, setShowBonusPopup] = useState(false)
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false)
+      // Show bonus popup after loading
+      setTimeout(() => {
+        setShowBonusPopup(true)
+      }, 1000)
     }, 3000)
   
     return () => clearTimeout(timer)
@@ -88,6 +93,73 @@ export default function HackathonWebsite() {
 
   return (
     <div className="min-h-screen bg-[#F5F5DC]">
+      {/* Independence Day Bonus Popup */}
+      {showBonusPopup && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white border-4 border-[#FF6B35] rounded-2xl shadow-2xl max-w-md w-full mx-4 relative overflow-hidden">
+            {/* Close button */}
+            <button
+              onClick={() => setShowBonusPopup(false)}
+              className="absolute top-4 right-4 text-[#8B4513] hover:text-[#FF6B35] z-10"
+            >
+              <X className="h-6 w-6" />
+            </button>
+
+            {/* Popup content */}
+            <div className="p-8 text-center">
+              {/* Flag colors decoration */}
+              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-orange-500 via-white to-green-500"></div>
+              
+              {/* Gift icon */}
+              <div className="mb-6">
+                <div className="w-20 h-20 bg-[#FF6B35] rounded-full flex items-center justify-center mx-auto animate-bounce">
+                  <Gift className="h-10 w-10 text-white" />
+                </div>
+              </div>
+
+              {/* Heading */}
+              <h2 className="text-3xl font-bold text-[#FF6B35] mb-4">
+                🎉 Independence Day Bonus! 🎉
+              </h2>
+
+              {/* Message */}
+              <div className="space-y-4">
+                <p className="text-xl font-semibold text-[#8B4513]">
+                  Great News!
+                </p>
+                <p className="text-lg text-[#8B4513]">
+                  We have extended the registration deadline till <span className="font-bold text-[#FF6B35]">August 16th</span> as our Independence Day gift to you!
+                </p>
+                <p className="text-base text-gray-600">
+                  Don't miss this opportunity to be part of HackFest 2025! 🇮🇳
+                </p>
+              </div>
+
+              {/* Action buttons */}
+              <div className="mt-8 space-y-4">
+                <Link href="https://forms.gle/N9wPdDkYvD7FaPBq9">
+                  <button 
+                    className="w-full bg-[#FF6B35] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#e55a2b] transition-colors"
+                    onClick={() => setShowBonusPopup(false)}
+                  >
+                    Register Now - Extended Deadline!
+                  </button>
+                </Link>
+                <button 
+                  onClick={() => setShowBonusPopup(false)}
+                  className="w-full bg-gray-200 text-[#8B4513] px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition-colors"
+                >
+                  I'll Register Later
+                </button>
+              </div>
+            </div>
+
+            {/* Bottom decoration */}
+            <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-orange-500 via-white to-green-500"></div>
+          </div>
+        </div>
+      )}
+
       {/* Header */}
       <header className="border-b-2 border-[#8B4513] bg-[#F5F5DC] sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -814,7 +886,7 @@ export default function HackathonWebsite() {
             </div>
             <div className="flex items-start">
               <span className="mr-2">•</span>
-              <span>Each team must include at least one female member. Teams can have up to 3 members, with a ₹500 registration fee.</span>
+              <span>Teams can have up to 3 members, with a ₹500 registration fee.</span>
             </div>
             <div className="flex items-start">
               <span className="mr-2">•</span>
@@ -936,7 +1008,7 @@ export default function HackathonWebsite() {
             </div>
           </div>
           <div className="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300">
-            <p>&copy; 2024 HackFest. All rights reserved.</p>
+            <p>&copy; 2025 HackFest. All rights reserved.</p>
           </div>
         </div>
       </footer>
